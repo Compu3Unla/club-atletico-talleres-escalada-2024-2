@@ -1,3 +1,48 @@
+@charset "utf-8";
+/*CSS Document/
+/tamaño de pantalla utilizado para trabajar: 1920 x 1080 px*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+body {
+    font-family: "Bebas Neue";
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    gap: 9px;
+}
+.submenu li {
+    display: block;
+    padding: 15px 20px;
+  }
+  
+  .submenu li:hover {
+    background-color: #DF0E0D;
+  }
+  
+  .nav li:hover .submenu {
+    display: block;
+  }
+
+.submenu a {
+    border-radius: 20px;
+    padding: 10px;
+}
 /*index*/
 /*FIN index*/
 
