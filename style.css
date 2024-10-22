@@ -13,10 +13,11 @@ body {
 
 }
 
-h1 {
-    font-family: "Bebas Neue";
+nav {
+  max-width: 900px;
+  margin: auto;
+  background-color: #000000;
 }
-
 /*index*/
 /*FIN index*/
 
