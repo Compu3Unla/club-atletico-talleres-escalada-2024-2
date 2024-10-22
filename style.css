@@ -8,41 +8,51 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     text-decoration: none;
-    
 }
-
 body {
     font-family: "Bebas Neue";
     background-color: #F8F8F8;
     width: 100%;
 }
 
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    gap: 9px;
+nav{
+    background-color: #000000;
+    font-size: 32px;
+    padding: 15px, 99px;
 }
-.submenu li {
+.menu-horizontal{
+display: flex;
+justify-content: space-between;
+}
+.menu-horizontal li a{
+    display: block;
+    color: #F8F8F8;
+    padding: 15px 20px;
+}
+.menu-horizontal li a:hover{
+    background-color:#DF0E0D;
+    color: #f8f8f8;
+}
+/*REVISAAAAAR hover :)*/
+.menu-vertical{
+    position: absolute;
+    display: none;
+    width: 164px;
+    background-color: #ebeaea;
+}
+.menu-vertical li a{
     display: block;
     padding: 15px 20px;
-  }
-  
-  .submenu li:hover {
-    background-color: #DF0E0D;
-  }
-  
-  .nav li:hover .submenu {
-    display: block;
-  }
-
-.submenu a {
-    border-radius: 20px;
-    padding: 10px;
+    color: #000000;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
 }
+.menu-horizontal li:hover .menu-vertical{
+display: block;
+}
+
 /*index*/
 /*FIN index*/
 
