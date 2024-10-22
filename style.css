@@ -19,7 +19,22 @@ body {
     background-color: #F8F8F8;
     width: 100%;
 }
+.banner-ppal {
+  display: flex;
+  background-image: url(grupo1-img/index/banner-header.jpg); 
+padding: 20px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+h1 {
+  color: #F8F8F8;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 1.2px;
+}
 nav{
     background-color: #000000;
     font-size: 32px;
