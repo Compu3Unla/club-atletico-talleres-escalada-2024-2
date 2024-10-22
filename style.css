@@ -1,23 +1,61 @@
-
 @charset "utf-8";
+
 /*CSS Document/*
 /*tamaño de pantalla utilizado para trabajar: 1920 x 1080 px*/
 
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{margin:0; padding:0;}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
 body {
-    font-family:  "Bebas Neue";
+    font-family: "Bebas Neue";
     background-color: #F8F8F8;
-    /*width: 100%;*/
-
+    width: 100%;
 }
 
-nav {
-  max-width: 900px;
-  margin: auto;
-  background-color: #000000;
+nav{
+    background-color: #000000;
+    font-size: 32px;
+    padding: 15px, 99px;
 }
+.menu-horizontal{
+display: flex;
+justify-content: space-between;
+}
+.menu-horizontal li a{
+    display: block;
+    color: #F8F8F8;
+    padding: 15px 20px;
+}
+.menu-horizontal li a:hover{
+    background-color:#DF0E0D;
+    color: #f8f8f8;
+}
+/*REVISAAAAAR hover :)*/
+.menu-vertical{
+    position: absolute;
+    display: none;
+    width: 164px;
+    background-color: #ebeaea;
+}
+.menu-vertical li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+.menu-horizontal li:hover .menu-vertical{
+display: block;
+}
+
 /*index*/
 /*FIN index*/
 
@@ -32,4 +70,3 @@ nav {
 
 /*MERCH*/
 /*FIN MERCH*/
-
