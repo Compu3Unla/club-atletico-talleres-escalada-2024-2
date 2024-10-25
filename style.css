@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/*CSS Document/*
+/*tamaño de pantalla utilizado para trabajar: 1920 x 1080 px*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+/* TAMAÑO TIPOGRAFIA- TODOS LOS H1 H2 H3 H4 H5 H6*/
+h1 {
+    color: #F8F8F8;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+}
+
+h4 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+
+
+/*index*/
+body {
+    font-family: "Bebas Neue";
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
+.banner-ppal {
+    display: flex;
+    background-image: url(grupo1-img/index/banner-header.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav {
+    background-color: #000000;
+    padding: 15px, 99px;
+}
+
+
+.menu-horizontal {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+
+}
+
+.menu-horizontal li a {
+    font-size: 32px;
+    display: block;
+    color: #F8F8F8;
+    padding: 15px 20px;
+}
+
+.menu-horizontal li a:hover {
+    color: #DF0E0D;
+
+}
+
+/*REVISAAAAAR hover :)*/
+
+
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    width: 164px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.menu-vertical li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+
+.menu-vertical li a:hover {
+    background-color: #DF0E0D;
+    color: #F8F8F8;
+
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+
+
+/*segundo nav*/
+.logo-talleres {
+    display: flex;
+    align-items: center;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #000000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.copy {
+    color: #F8F8F8;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+    padding: 10px 30px;
+}
+
+
+
+.redes {
+    padding: 10px 30px;
+
+
+}
+
+.redes h5 {
+    color: #F8F8F8;
+    font-family: "Bebas Neue";
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    /* 133.333% */
+    letter-spacing: 3px;
+    padding-bottom: 20px 10px;
+    margin-top: 10px;
+}
+
+
+
+.redes img {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*Section noticias*/
+
+/* Fin Section noticias*/
+
+/*FIN index*/
+
+/*SOCIOS*/
+/* FIN SOCIOS*/
+
+
+
+/*HISTORIA*/
+.historia {
+    display: flex;
+    justify-content: center;
+    background-color: #BD1414;
+}
+
+
+
+.historia-texto h2 {
+    position: relative;
+    top: -311px;
+    color: #BD1414;
+    background-color: #F8F8F8;
+    width: 500px;
+padding: 12px 50px;
+}
+
+
+/*FIN HISTORIA*/
+
+
+/*NOTICIAS*/
+/*FIN NOTICIAS*/
+
+/*MERCH*/
+/*FIN MERCH*/
