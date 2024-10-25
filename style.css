@@ -142,11 +142,59 @@ footer {
 
 
 .redes img {
-margin-right: 10px;
-margin-top: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*Section noticias*/
+.slider-frame{
+    background-color: #000000;
+
+}
+.noticia-slide {
+position: relative;
+width: 100%;
+height: auto;
+}
+.noticia-slide li{
+    position: absolute;
+    opacity: 1;
+}
+
+/*.slider-frame{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame ul{
+    display: flex;
+    width: 300%;
 }
 
 
+.slider-frame li{
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0%  {margin-left 0%;}
+    45% {margin-left: 0%;}
+
+    50% {margin-left: -100%;}
+    70% {margin-left: -100%;}
+
+    75% {margin-left: -200%;}
+    95% {margin-left: -200%;}
+
+}*/
+
+
+/* Fin Section noticias*/
 
 /*FIN index*/
 
