@@ -13,7 +13,31 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-weight: 400;
 }
+/* TAMAÑO TIPOGRAFIA- TODOS LOS H1 H2 H3 H4 H5 H6*/
+h1 {
+    color: #F8F8F8;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+}
+
+h4 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+
 
 /*index*/
 body {
@@ -32,12 +56,7 @@ body {
     align-items: center;
 }
 
-h1 {
-    color: #F8F8F8;
-    font-weight: 400;
-    font-size: 40px;
-    letter-spacing: 1.2px;
-}
+
 
 nav {
     background-color: #000000;
@@ -155,7 +174,27 @@ footer {
 /*SOCIOS*/
 /* FIN SOCIOS*/
 
+
+
 /*HISTORIA*/
+.historia {
+    display: flex;
+    justify-content: center;
+    background-color: #BD1414;
+}
+
+
+
+.historia-texto h2 {
+    position: relative;
+    top: -311px;
+    color: #BD1414;
+    background-color: #F8F8F8;
+    width: 500px;
+padding: 12px 50px;
+}
+
+
 /*FIN HISTORIA*/
 
 
