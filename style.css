@@ -299,5 +299,120 @@ max-width: 750px;
 /*NOTICIAS*/
 /*FIN NOTICIAS*/
 
+
+
+
+
+
+
 /*MERCH*/
+
+.imagengrande{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--Rojo-Bastn, #DF0E0D);
+    
+
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.button1 {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #ff0000;
+}
+
+
+.button2:hover {
+    background-color: #000000;
+}
+
+
+.imagenminiatura{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+align-self: stretch;
+
+}
+
+.boton1{
+    display: flex;
+width: 400px;
+max-width: 400px;
+padding: 12px 0px;
+justify-content: center;
+align-items: center;
+}
+
+.boton2{
+    display: flex;
+width: 400px;
+max-width: 400px;
+padding: 12px 0px;
+justify-content: center;
+align-items: center;
+}
+
+h3{
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuotas{
+    display: flex;
+    width: 400px;
+    max-width: 400px;
+    padding: 12px 0px;
+    justify-content: space-around;
+    align-items: center;
+    color: #000;
+font-family: "Work Sans";
+}
+
+.talle{
+    font-family: "Work Sans";
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*FIN MERCH*/
