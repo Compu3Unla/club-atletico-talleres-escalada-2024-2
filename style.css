@@ -118,6 +118,7 @@ nav {
 /*segundo nav*/
 .logo-talleres {
     display: flex;
+
     align-items: center;
 }
 
@@ -165,6 +166,34 @@ footer {
     margin-top: 10px;
 }
 
+
+
+/*SECTION MERCH */
+.merch ul {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+/*SECTION deportes */
+.deportes ul {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+
+/*SECTION sponsors */
+.sponsors ul{
+    display: flex;
+    gap: 50px;
+}
+
+
+
+
 /*Section noticias*/
 
 /* Fin Section noticias*/
@@ -181,7 +210,11 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #BD1414;
+    flex-direction: column;
+    width: 100%;
+    align-items: center
 }
+
 
 
 
@@ -194,7 +227,72 @@ footer {
 padding: 12px 50px;
 }
 
+.fechas {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #141414;
+    width: 100%;
+    padding: 21px 108px 48px 80px;
+}
 
+.fechas a {
+    color: var(--blanco-escalada, #F8F8F8);
+text-align: center;
+font-family: "Bebas Neue";
+font-size: 40px;
+font-weight: 400;
+letter-spacing: 2px;
+text-align: center;
+}
+.fechas li a:hover {
+    color: #DF0E0D;
+    transform: scale(1.4);
+
+}
+
+
+.fechas p {
+    text-align: center;
+font-family: "Work Sans";
+font-size: 32px;
+font-weight: 400;
+letter-spacing: 1.6px;
+color: #F8F8F8;
+}
+
+.fechas li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia1906 {
+    display: flex;
+    height: 100%;
+
+}
+
+.historia1906 h3 { 
+    color: black; /* Color del texto */
+    margin-bottom: 10px; /* Ajusta el margen inferior si necesitas más espacio */
+    border-bottom: 4px solid #ca1610; /* Color y grosor de la línea */
+    padding-bottom: 5px ; /* Espacio entre el texto y la línea */
+}
+
+.historia-texto p {
+font-family: "Work Sans";
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+max-width: 750px;
+
+}
+
+
+
+.historia-texto { 
+    gap: 30px;
+}
 /*FIN HISTORIA*/
 
 
