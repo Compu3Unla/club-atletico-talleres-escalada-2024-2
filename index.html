@@ -97,37 +97,100 @@
         <section class="banner">
             <!--Background-image en css + textos (Revisar h2 y p que se van a convertir en <a>)-->
         </section>
-        <section class="merch">
-            <!--Falta aplicar css (estilo)-->
-            <ul>
-                <li><img src="grupo1-img/html-merch/merch-short.png" alt="short" width="292px" height="271" ></li>
-                <li><img src="grupo1-img/html-merch/merch-buzo.png" alt="buzo" width="292px" height="271"></li>
-                <li><img src="grupo1-img/html-merch/merch-camiseta.png" alt="camiseta" width="292px" height="271"></li>
-                <li><img src="grupo1-img/html-merch/merch-piluso.png" alt="piluso" width="292px" height="271"></li>
-                <li><img src="grupo1-img/html-merch/merch-pantalon.png" alt="pantalon" width="292px" height="271"></li>
-                <li><img src="grupo1-img/html-merch/merch-setmate.png" alt="set-mate" width="292px" height="271"></li>
-            </ul>
-        </section>
+<!------------------MERCH------------------>
+
+<main class="galeria">
+    <section>
+        <div class="inicio-carousel">
+                <h2>productos destacados</h2>
+        </div>
+        <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- proyecto 1 -->
+                    <div class="carousel-item">
+                        <a href=".html">
+                            <img src="./grupo1-img/html-merch/merch-buzo.png"
+                                alt="Buzo de talleres" width="292px" height="271px">
+                                <span class="ver-mas">Ver más</span>
+                        </a>
+                    </div>
+                    <!-- proyecto 2 -->
+                    <div class="carousel-item">
+                        <a href="merch.html">
+                            <img src="./grupo1-img/html-merch/merch-camiseta.png" alt="camiseta de talleres"
+                                width="292px" height="271px">
+                                <span class="ver-mas">Ver más</span>
+                        </a>
+                    </div>
+                    <!-- proyecto 3 -->
+                    <div class="carousel-item">
+                        <a href=".html">
+                            <img src="./grupo1-img/html-merch/merch-musculosa.png"
+                                alt="Musculosa talleres" width="292px" height="271px">
+                                <span class="ver-mas">Ver más</span>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="./grupo1-img/html-merch/merch-pantalon.png" alt="Pantalon talleres"
+                                width="292px" height="271px">
+                                <span class="ver-mas">Ver más</span>
+                        </a>
+                    </div>
+                    <!-- proyecto 5 -->
+                    <div class="carousel-item">
+                        <a href="html">
+                            <img src="./grupo1-img/html-merch/merch-piluso.png"
+                                alt="Piluso Talleres" width="292px" height="271px">
+                                <span class="ver-mas">Ver más</span>
+                        </a>
+                    </div>
+                    <!-- proyecto 6 -->
+                    <div class="carousel-item">
+                        <a href="juancito.html">
+                            <img src="./grupo1-img/html-merch/merch-setmate.png"
+                                alt="Set de mate talleres" width="292px" height="271px">
+                                <span class="ver-mas">Ver más</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
         <section class="deportes">
             <!--Falta aplicar css y agregar el h2/h3 (dentro del <li>)-->
-            <ul>
-                <li>
-                    <img src="grupo1-img/index/iconos/icono-basket.svg" alt="basket" width="120px" height="99">
-                </li>
-                <li>
-                    <img src="grupo1-img/index/iconos/icono-tenis.svg" alt="tenis" width="292px" height="271">
-                </li>
-                <li>
-                    <img src="grupo1-img/index/iconos/icono-patin.svg" alt="patin" width="292px" height="271" >
-                </li>
-                <li>
-                    <img src="grupo1-img/index/iconos/icono-boxeo.svg" alt="boxeo" width="292px" height="271">
-                </li>
-                <li>
-                    <img src="grupo1-img/index/iconos/icono-voley.svg" alt="handball" width="292px" height="271">
-                </li>
+                <div class="nombre">
+                    <h2>DEPORTES DEL CLUB</h2>
+                </div>
+                <div class="deportes">
+                    <div class="deporte">
+                        <img src="grupo1-img/index/iconos/icono-tenis.svg" height="60px" width="60px">
+                        <p>TENIS</p>
+                    </div>
+                    <div class="deporte">
+                        <img src="grupo1-img/index/iconos/icono-boxeo.svg" height="60px" width="60px">
+                        <p>BOXEO</p>
+                    </div>
+                    <div class="deporte">
+                        <img src="grupo1-img/index/iconos/icono-basket.svg" height="60px" width="60px">
+                        <p>BASKET</p>
+                    </div>
+                    <div class="deporte">
+                        <img src="grupo1-img/index/iconos/icono-patin.svg" height="60px" width="60px">
+                        <p>PATÍN</p>
+                    </div>
+                    <div class="deporte">
+                        <img src="grupo1-img/index/iconos/icono-voley.svg" height="60px" width="60px">
+                        <p>VOLEY</p>
+                    </div>
+                </div>
+                </div>
                 <!--Cambiar nombre de voley a Handball-->
-            </ul>
+
 
         </section>
         <section class="sponsors">
@@ -160,5 +223,6 @@
                     src="grupo1-img/index/redes/logo-facebook.png" alt="logo facebook" width="13" height="25"></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

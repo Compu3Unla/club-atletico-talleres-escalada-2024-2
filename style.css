@@ -167,38 +167,223 @@ footer {
 }
 
 
+/*************************COMIENZO DE SECCIONES DE INDEX**********************************************/
+/*GALERIA SLIDER */ 
+
+
+/* FIXTURE*/ 
+
+/* BANNER */ 
+
 
 /*SECTION MERCH */
-.merch ul {
-    display: flex;
-    gap: 50px;
+/***********************************************aca empieza merch-carrousel ***********************************:)*/
+
+.galeria {
+    height: 100vh;
 }
+
+.inicio-carousel h2 {
+    text-align: center;
+    color: #F8F8F8;
+    background-color: #141414;
+    padding: 20px 0px;
+    letter-spacing: 0.5px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 95px;
+}
+
+.carousel {
+    width: 88%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 25%;
+    text-align: center;
+}
+
+/* Contenedor de imagen y borde separado */
+.carousel-item a {
+    display: inline-block;
+    overflow: hidden;
+    border: 5px solid #BD1414;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia solo el color del borde al hacer hover */
+.carousel-item a:hover {
+    border-color: #141414;
+}
+
+/* Efecto de zoom solo en la imagen */
+.carousel-item img {
+    width: 292px;
+    height: 271px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.9;
+}
+
+.carousel-item a:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Estilos para el texto 'Ver más' */
+.ver-mas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #141414;
+    opacity: 0;
+    /* para que se vea solo al hacer hover */
+    color: #F8F8F8;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+/* Mostrar 'Ver más' al hacer hover en el contenedor de la imagen */
+.carousel-item:hover .ver-mas {
+    opacity: 1;
+}
+
+button {
+    background-color: #DF0E0D;
+    color: #F8F8F8;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 4px 12px 4px 10px;
+}
+
+button.prev {
+    left: 60px;
+}
+
+button.next {
+    right: 60px;
+}
+
+button:hover {
+    background-color: #7F3565;
+}
+
+
+/***********************************************aca termina merch-carrousel ***********************************:)*/
+
+
 
 
 
 /*SECTION deportes */
-.deportes ul {
+.nombre {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+
+}
+
+.nombre h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Bebas Neue";
+    font-size: 30px;
     display: flex;
-    gap: 50px;
+    justify-content: center;
+}
+
+.deportes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.deporte {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
 }
 
 
 
-
-/*SECTION sponsors */
-.sponsors ul{
-    display: flex;
-    gap: 50px;
-}
-
-
-
-
-/*Section noticias*/
+/*Section noticias DEL CLUB*/
 
 /* Fin Section noticias*/
 
-/*FIN index*/
+
+/*SECTION sponsors */
+
+
+/**********************************************************************SECTION sponsorS************************************************/
+
+
+.sponsors {
+    background-color: #BD1414;
+}
+
+.sponsors ul {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 35px 0px;
+    /* Transiciones suaves */
+}
+
+.sponsors li img {
+    opacity: 0.6;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.sponsors li img:hover {
+    opacity: 1;
+    /* Opacidad al 100% */
+    transform: scale(1.1);
+    /* Zoom del 10% */
+}
+
+
+
+
+
+
+.sponsors h3 {
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 24px;
+    color: #F8F8F8;
+    padding: 30px 0px;
+}
+
+/**************************FIN SPONSORS*********************************/
+
+
+
+
+
+/********************************************************TERMINA EL INDEX*******************************************************/
 
 /*SOCIOS*/
 /* FIN SOCIOS*/
@@ -301,3 +486,4 @@ max-width: 750px;
 
 /*MERCH*/
 /*FIN MERCH*/
+
