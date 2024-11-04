@@ -867,10 +867,10 @@ max-width: 750px;
 .imagen-principal img {
     width: 100%;
     border: 1px solid red;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: flex-end;
+
+
 
 }
 
@@ -885,58 +885,66 @@ max-width: 750px;
 
 }
 
+
 .camiseta {
     width: 55%;
-    padding-left: 20px;
+    padding:20px;
 }
 
 .camiseta h1 {
-    font-size: 30px;
+    font-size: 40px;
     color: #000000;
     margin-bottom: 10px;
 }
 
 .precio {
-    font-size: 24px;
+    font-size: 28px;
     color: #000000;
     margin-bottom: 5px;
 }
 
 .cuotas {
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
 
 .talles {
     margin-bottom: 15px;
+    font-size: 22px;
+    
+    
 }
 
 .opciones-talles {
-    display: flex;
-    gap: 5px;
+    gap: 20px;
+    padding: 10px;
 }
 
 .opciones-talles button {
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     background-color: #fff;
-    cursor: pointer;
+
+
 }
 
 .cantidad {
     margin-bottom: 20px;
+    
 }
 
 .cantidad p {
     margin: 0;
+    font-size: 22px;
+
 }
 
 .selector-cantidad {
     display: flex;
     align-items: center;
     gap: 5px;
+padding: 10px;
     
 }
 
@@ -944,8 +952,6 @@ max-width: 750px;
     padding: 5px;
     border: 1px solid #ff0000;
     background-color: #fff;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 .selector-cantidad input {
@@ -958,6 +964,7 @@ max-width: 750px;
 .metodos-pago {
     margin-bottom: 20px;
     font-weight: bold;
+    font-size: 22px;
 }
 
 .iconos {
