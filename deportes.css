@@ -1,0 +1,31 @@
+
+.nombre {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+
+}
+
+.nombre h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.deportes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.deporte {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+}
+
+

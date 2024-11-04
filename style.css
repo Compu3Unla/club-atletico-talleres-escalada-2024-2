@@ -209,110 +209,165 @@ padding: 12px 50px;
 
 /*MERCH*/
 
-.imagengrande{
+.producto {
     display: flex;
-justify-content: center;
-align-items: center;
-gap: 40px;
-align-self: stretch;
-}
-
-.producto-imagen {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid var(--Rojo-Bastn, #DF0E0D);
-    
-
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.button1 {
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.button2 {
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.button1:hover {
-    background-color: #ff0000;
-}
-
-
-.button2:hover {
-    background-color: #000000;
-}
-
-
-.imagenminiatura{
-    display: flex;
-justify-content: center;
-align-items: center;
-gap: 30px;
-align-self: stretch;
-
-}
-
-.boton1{
-    display: flex;
-width: 400px;
-max-width: 400px;
-padding: 12px 0px;
-justify-content: center;
-align-items: center;
-}
-
-.boton2{
-    display: flex;
-width: 400px;
-max-width: 400px;
-padding: 12px 0px;
-justify-content: center;
-align-items: center;
-}
-
-h3{
-    display: flex;
-    width: 400px;
+    max-width: 900px;
+    background-color: #fff;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.cuotas{
+.galeria {
+    width: 45%;
     display: flex;
-    width: 400px;
-    max-width: 400px;
-    padding: 12px 0px;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    color: #000;
-font-family: "Work Sans";
 }
 
-.talle{
-    font-family: "Work Sans";
-    font-size: 15px;
+.imagen-principal img {
+    width: 100%;
+    border: 1px solid red;
+    padding: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.miniaturas {
+    display: flex;
+    gap: 15px;
+}
+
+.miniaturas img {
+    width: 30%;
+    border: 1px solid #ff0000;
+
+}
+
+.camiseta {
+    width: 55%;
+    padding-left: 20px;
+}
+
+.camiseta h1 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.cuotas {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.talles {
+    margin-bottom: 15px;
+}
+
+.opciones-talles {
+    display: flex;
+    gap: 5px;
+}
+
+.opciones-talles button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.cantidad {
+    margin-bottom: 20px;
+}
+
+.cantidad p {
+    margin: 0;
+}
+
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.selector-cantidad button {
+    padding: 5px;
+    border: 1px solid #ff0000;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.selector-cantidad input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ff0000;
+
+}
+
+.metodos-pago {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.iconos {
+    display: flex;
+    gap: 10px;
+}
+
+.iconos img {
+    width: 30px;
+    height: 30px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.agregar-carrito,
+.comprar {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.agregar-carrito {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border-radius: 4px;
 }
 
 
+.agregar-carrito:hover{
+    background-color: #000000;
+    transition: 0.3s ease;
+}
 
+.comprar {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+}
 
-
-
-
+.comprar:hover {
+    background-color: #ff0000;
+    transition: 0.3s ease;
+}
 
 
 
