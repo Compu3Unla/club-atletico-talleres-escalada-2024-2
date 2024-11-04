@@ -283,10 +283,6 @@ button.next {
     right: 60px;
 }
 
-button:hover {
-    background-color: #7F3565;
-}
-
 
 /***********************************************aca termina merch-carrousel ***********************************:)*/
 
@@ -386,6 +382,275 @@ button:hover {
 /********************************************************TERMINA EL INDEX*******************************************************/
 
 /*SOCIOS*/
+
+/*SOCIOS*/
+
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
+    color: #141414;
+}
+
+
+
+main {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    gap: 31px;
+    flex: 1 0 0;
+    margin: 50px;
+}
+
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    gap: 28px;
+    padding: 50px;
+}
+
+.tabla-precios table {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+
+.tabla-precios td:first-child {
+    font-size: 32px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: #BD1414;
+    color: #F8F8F8;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.tabla-precios th {
+    background-color: #BD1414;
+    color: #fff;
+}
+
+.asociarse {
+    padding: 24px;
+    justify-content: center;
+    display: flex;
+    width: 886px;
+    align-items: flex-start;
+    color: #F8F8F8;
+    background-color: #141414;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.asociarse:hover {
+    color: #DF0E0D;
+}
+
+
+/* section info*/
+
+.informacion,
+.atencion-cliente {
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.informacion p,
+.atencion-cliente p {
+    margin-top: 15px;
+    color: var(--Negro-tallarin, #141414);
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.informacion p strong {
+    color: #141414;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: small-caps;
+    letter-spacing: 1.6px;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    gap: 80px;
+    /* Espacio entre el main y el aside */
+    margin: 0 auto;
+    /* Centra el contenedor en la página */
+}
+
+main {
+    flex: 1;
+    /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+/* Estilos del Banner Publicitario */
+
+.banner-publicitario {
+    width: 300px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-publicitario .compra-online {
+    position: absolute;
+    top: 20px;
+    /* Ajusta según necesites la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+    z-index: 1;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.banner-publicitario p {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 55px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+.boton-tienda {
+    padding: 13px 34px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: #141414;
+    color: #F8F8F8;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+.banner-publicitario img {
+    width: 100%;
+    /* Ajusta el ancho al contenedor */
+}
+
+
+/* Estilos básicos para el modal */
+.modal {
+    font-family: "work sans";
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+    background-color: #F8F8F8;
+    padding: 40px 40px;
+    width: 100vh;
+    max-width: 392px;
+    position: relative;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.modal-content h2 {
+    color: #BD1414;
+    /* Rojo Talleres */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.modal-content input,
+.modal-content select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 2px solid #BD1414;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    padding: 12px 24px;
+    background-color: #BD1414;
+    color: #F8F8F8;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.modal-content button:hover {
+    background-color: #a10e0e;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #BD1414;
+}
+
+.mostrar-contraseña {
+    display: flex;
+}
+
 /* FIN SOCIOS*/
 
 
