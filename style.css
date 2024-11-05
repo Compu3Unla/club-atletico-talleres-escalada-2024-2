@@ -15,6 +15,7 @@
     text-decoration: none;
     font-weight: 400;
 }
+
 /* TAMAÑO TIPOGRAFIA- TODOS LOS H1 H2 H3 H4 H5 H6*/
 h1 {
     color: #F8F8F8;
@@ -168,12 +169,12 @@ footer {
 
 
 /*************************COMIENZO DE SECCIONES DE INDEX**********************************************/
-/*GALERIA SLIDER */ 
+/*GALERIA SLIDER */
 
 
-/* FIXTURE*/ 
+/* FIXTURE*/
 
-/* BANNER */ 
+/* BANNER */
 
 
 /*SECTION MERCH */
@@ -262,7 +263,9 @@ footer {
 .carousel-item:hover .ver-mas {
     opacity: 1;
 }
-.next,.prev {
+
+.next,
+.prev {
     background-color: #DF0E0D;
     color: #F8F8F8;
     border: none;
@@ -320,7 +323,7 @@ footer {
     padding: 30px;
 }
 
-.deporte p{
+.deporte p {
     text-align: center;
     font-size: 0.9rem;
     font-family: "Work Sans", sans-serif;
@@ -329,7 +332,7 @@ footer {
 }
 
 /*Section noticias DEL CLUB*/
-.actividades-index{
+.actividades-index {
     display: flex;
     padding: 30px;
 }
@@ -361,7 +364,8 @@ footer {
 .sponsors li img {
     opacity: 0.6;
     transform: scale(1);
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Transiciones suaves */
 }
 
 .sponsors li img:hover {
@@ -514,7 +518,7 @@ h3 {
     /* Centra el contenedor en la página */
 }
 
-.socios-main{
+.socios-main {
     flex: 1;
     /* Ocupa el espacio restante */
     display: flex;
@@ -666,26 +670,42 @@ h3 {
 
 
 
-/*HISTORIA*/
+/************************************************HISTORIA*******************************/
+
+/*section 1 historia*/
+
 .historia {
-    display: flex;
-    justify-content: center;
-    background-color: #BD1414;
-    flex-direction: column;
-    width: 100%;
-    align-items: center
+    height: 92vh;
 }
 
 
 
+.video-contenedor {
+    background-color: #BD1414;
+    /* Fondo rojo */
+    display: flex;
+    justify-content: center;
+    z-index: 5;  /* para que este debajo de los botones*/
+}
 
-.historia-texto h2 {
+.video-contenedor video {
+    width: 1300px;
+    height: 750px;
+    /* Ajusta el ancho del video según prefieras */
+    max-width: 1200px;
+    /* Máximo ancho del video */
+}
+
+
+.historia h2 {
     position: relative;
-    top: -311px;
+    bottom: 200px;
+    left: 352px;
     color: #BD1414;
     background-color: #F8F8F8;
     width: 500px;
-padding: 12px 50px;
+    padding: 12px 50px;
+    z-index: 10;  /* para que este arriba del video */
 }
 
 .fechas {
@@ -693,32 +713,35 @@ padding: 12px 50px;
     justify-content: space-evenly;
     background-color: #141414;
     width: 100%;
-    padding: 21px 108px 48px 80px;
+    padding: 30px 0px 30px 0px;
+    position: relative;
+    bottom: 113px;
+    z-index: 15;
 }
 
 .fechas a {
     color: var(--blanco-escalada, #F8F8F8);
-text-align: center;
-font-family: "Bebas Neue";
-font-size: 40px;
-font-weight: 400;
-letter-spacing: 2px;
-text-align: center;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
 }
+
 .fechas li a:hover {
     color: #DF0E0D;
     transform: scale(1.4);
-
 }
 
 
 .fechas p {
     text-align: center;
-font-family: "Work Sans";
-font-size: 32px;
-font-weight: 400;
-letter-spacing: 1.6px;
-color: #F8F8F8;
+    font-family: "Work Sans";
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: #F8F8F8;
 }
 
 .fechas li {
@@ -727,44 +750,60 @@ color: #F8F8F8;
     align-items: center;
 }
 
+/* section 2 historia*/
+
+
 .historia1906 {
+    height: 100vh;
+
+}
+
+.tit-historia {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
+    color: #141414;
+}
+
+
+.historia-2 {
     display: flex;
-    height: 100%;
-
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    gap: 100px
 }
 
-.historia1906 h3 { 
-    color: black; /* Color del texto */
-    margin-bottom: 10px; /* Ajusta el margen inferior si necesitas más espacio */
-    border-bottom: 4px solid #ca1610; /* Color y grosor de la línea */
-    padding-bottom: 5px ; /* Espacio entre el texto y la línea */
-}
 
-.historia-texto p {
-font-family: "Work Sans";
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-max-width: 750px;
-
+.historia-2 p {
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    max-width: 750px;
 }
 
 
 
-.historia-texto { 
-    gap: 30px;
+
+
+
+.menu-vertical {
+    z-index: 20;
 }
+
 /*FIN HISTORIA*/
 
 
 /*NOTICIAS*/
 /* imagen TITULAR */
-.noticia-padre{
+.noticia-padre {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
-#titular{
+
+#titular {
     background-image: url(grupo1-img/html-noticias/articulo-titulo.png);
     background-repeat: no-repeat;
     height: 80vh;
@@ -772,41 +811,47 @@ max-width: 750px;
     flex-direction: column;
     justify-content: flex-end;
 }
-#titular h2{
+
+#titular h2 {
     color: #F8F8F8;
     background-color: #BD1414;
-    padding: 0.3em;}
+    padding: 0.3em;
+}
 
 
 /* NOTICIA PRINCIPAL */
-#noticia-ppal{
+#noticia-ppal {
     display: flex;
     justify-content: space-around;
 }
-#noticia-ppal article{
+
+#noticia-ppal article {
     max-width: 1000px;
     padding: 3em;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
+
 #noticia-ppal article p {
     display: flex;
     flex-direction: column;
     gap: 1em;
     font-family: "Work Sans", sans-serif;
 }
+
 #noticia-ppal article h3 {
     border-bottom: 3px solid #BD1414;
 }
 
 
-.leyenda{
+.leyenda {
     border: none;
     font-size: 0.1em;
 }
+
 /* OTRAS NOTICIAS */
-#otras-noticias{
+#otras-noticias {
     display: flex;
     gap: 2em;
     justify-content: center;
@@ -814,7 +859,7 @@ max-width: 750px;
 }
 
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     max-width: 20em;
@@ -823,18 +868,19 @@ max-width: 750px;
     align-items: center;
     justify-content: space-between;
     color: #F8F8F8;
-    border: 0.5em solid #BD1414 ;
+    border: 0.5em solid #BD1414;
     background-image: url(grupo1-img/html-noticias/articulo-noticia.jpeg);
     background-repeat: no-repeat;
 }
 
 
-.click-card button{
+.click-card button {
     font-size: 12px;
     padding: 10px;
     color: #F8F8F8;
     border: none;
-    background-color: #DF0E0D;}
+    background-color: #DF0E0D;
+}
 
 /*FIN NOTICIAS*/
 
@@ -887,7 +933,7 @@ max-width: 750px;
 
 .camiseta {
     width: 55%;
-    padding:20px;
+    padding: 20px;
 }
 
 .camiseta h1 {
@@ -911,8 +957,8 @@ max-width: 750px;
 .talles {
     margin-bottom: 15px;
     font-size: 22px;
-    
-    
+
+
 }
 
 .opciones-talles {
@@ -930,7 +976,7 @@ max-width: 750px;
 
 .cantidad {
     margin-bottom: 20px;
-    
+
 }
 
 .cantidad p {
@@ -943,8 +989,8 @@ max-width: 750px;
     display: flex;
     align-items: center;
     gap: 5px;
-padding: 10px;
-    
+    padding: 10px;
+
 }
 
 .selector-cantidad button {
@@ -998,7 +1044,7 @@ padding: 10px;
 }
 
 
-.agregar-carrito:hover{
+.agregar-carrito:hover {
     background-color: #000000;
     transition: 0.3s ease;
 }
@@ -1013,7 +1059,3 @@ padding: 10px;
     background-color: #ff0000;
     transition: 0.3s ease;
 }
-
-
-
-
