@@ -174,7 +174,7 @@ nav {
 footer {
     background-color: #000000;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -936,7 +936,8 @@ footer {
 
 .leyenda {
     border: none;
-    font-size: 0.1em;
+    font-size: 1em;
+    font-family: "Work Sans", sans-serif;
 }
 
 /* OTRAS NOTICIAS */
@@ -972,13 +973,6 @@ footer {
 }
 
 /*FIN NOTICIAS*/
-
-
-
-
-
-
-
 
 /**MERCH**********************************************************************************************************/
 
@@ -1148,3 +1142,5 @@ footer {
     background-color: #ff0000;
     transition: 0.3s ease;
 }
+
+/*************************************** MEDIA ****************************************************************************/
