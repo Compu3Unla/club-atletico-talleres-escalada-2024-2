@@ -755,9 +755,15 @@ h3 {
 
 .historia1906 {
     height: 100vh;
-
 }
 
+.num-fecha{
+    display: flex;
+    background-color: #DF0E0D;
+    color: #F8F8F8;
+    justify-content: center;
+    padding: 20px;
+}
 .tit-historia {
     font-size: 40px;
     letter-spacing: 1.6px;
