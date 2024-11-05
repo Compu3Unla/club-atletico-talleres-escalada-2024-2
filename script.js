@@ -21,3 +21,17 @@ function moveSlide(direction) {
     carouselTrack.style.transform = `translateX(${offset}%)`;
 }
 
+// click para visualizar contraseñas
+function togglePasswordVisibility(passwordFieldId, iconElement) {
+    const passwordField = document.getElementById(passwordFieldId);
+    const toggleIcon = iconElement.querySelector("img");
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleIcon.src = "grupo1-img/html-socios-form/visibility-off.svg"; // Cambia a icono de ojo cerrado
+    } else {
+        passwordField.type = "password";
+        toggleIcon.src = "grupo1-img/html-socios-form/visibility.svg"; // Cambia a icono de ojo abierto
+    }
+}
+
