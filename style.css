@@ -118,6 +118,7 @@ nav {
 /*segundo nav*/
 .logo-talleres {
     display: flex;
+
     align-items: center;
 }
 
@@ -165,13 +166,503 @@ footer {
     margin-top: 10px;
 }
 
-/*Section noticias*/
+
+/*************************COMIENZO DE SECCIONES DE INDEX**********************************************/
+/*GALERIA SLIDER */ 
+
+
+/* FIXTURE*/ 
+
+/* BANNER */ 
+
+
+/*SECTION MERCH */
+/***********************************************aca empieza merch-carrousel ***********************************:)*/
+
+.galeria-index {
+    height: 100vh;
+}
+
+.inicio-carousel h2 {
+    text-align: center;
+    color: #F8F8F8;
+    background-color: #141414;
+    padding: 20px 0px;
+    letter-spacing: 0.5px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 95px;
+}
+
+.carousel {
+    width: 88%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 25%;
+    text-align: center;
+}
+
+/* Contenedor de imagen y borde separado */
+.carousel-item a {
+    display: inline-block;
+    overflow: hidden;
+    border: 5px solid #BD1414;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia solo el color del borde al hacer hover */
+.carousel-item a:hover {
+    border-color: #141414;
+}
+
+/* Efecto de zoom solo en la imagen */
+.carousel-item img {
+    width: 292px;
+    height: 271px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.9;
+}
+
+.carousel-item a:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Estilos para el texto 'Ver más' */
+.ver-mas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #141414;
+    opacity: 0;
+    /* para que se vea solo al hacer hover */
+    color: #F8F8F8;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+/* Mostrar 'Ver más' al hacer hover en el contenedor de la imagen */
+.carousel-item:hover .ver-mas {
+    opacity: 1;
+}
+
+button {
+    background-color: #DF0E0D;
+    color: #F8F8F8;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 4px 12px 4px 10px;
+}
+
+button.prev {
+    left: 60px;
+}
+
+button.next {
+    right: 60px;
+}
+
+
+/***********************************************aca termina merch-carrousel ***********************************:)*/
+
+
+
+
+
+/*SECTION deportes */
+.nombre {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+
+}
+
+.nombre h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.deportes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.deportes-icono {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.deporte p{
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+/*Section noticias DEL CLUB*/
+.actividades-index{
+    display: flex;
+    padding: 30px;
+}
+
 
 /* Fin Section noticias*/
 
-/*FIN index*/
+
+/*SECTION sponsors */
+
+
+/**********************************************************************SECTION sponsorS************************************************/
+
+
+.sponsors {
+    background-color: #BD1414;
+}
+
+.sponsors ul {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 35px 0px;
+    /* Transiciones suaves */
+}
+
+.sponsors li img {
+    opacity: 0.6;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.sponsors li img:hover {
+    opacity: 1;
+    /* Opacidad al 100% */
+    transform: scale(1.1);
+    /* Zoom del 10% */
+}
+
+
+
+
+
+
+.sponsors h3 {
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 24px;
+    color: #F8F8F8;
+    padding: 30px 0px;
+}
+
+/**************************FIN SPONSORS*********************************/
+
+
+
+
+
+/********************************************************TERMINA EL INDEX*******************************************************/
 
 /*SOCIOS*/
+
+/*SOCIOS*/
+
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
+    color: #141414;
+}
+
+
+
+.socios-main {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    gap: 31px;
+    flex: 1 0 0;
+    margin: 50px;
+}
+
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    gap: 28px;
+    padding: 50px;
+}
+
+.tabla-precios table {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+
+.tabla-precios td:first-child {
+    font-size: 32px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: #BD1414;
+    color: #F8F8F8;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.tabla-precios th {
+    background-color: #BD1414;
+    color: #fff;
+}
+
+.asociarse {
+    padding: 24px;
+    justify-content: center;
+    display: flex;
+    width: 886px;
+    align-items: flex-start;
+    color: #F8F8F8;
+    background-color: #141414;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.asociarse:hover {
+    color: #DF0E0D;
+}
+
+
+/* section info*/
+
+.informacion,
+.atencion-cliente {
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.informacion p,
+.atencion-cliente p {
+    margin-top: 15px;
+    color: var(--Negro-tallarin, #141414);
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.informacion p strong {
+    color: #141414;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: small-caps;
+    letter-spacing: 1.6px;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    gap: 80px;
+    /* Espacio entre el main y el aside */
+    margin: 0 auto;
+    /* Centra el contenedor en la página */
+}
+
+.socios-main{
+    flex: 1;
+    /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+/* Estilos del Banner Publicitario */
+
+.banner-publicitario {
+    width: 300px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-publicitario .compra-online {
+    position: absolute;
+    top: 20px;
+    /* Ajusta según necesites la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+    z-index: 1;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.banner-publicitario p {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 55px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+.boton-tienda {
+    padding: 13px 34px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: #141414;
+    color: #F8F8F8;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+.banner-publicitario img {
+    width: 100%;
+    /* Ajusta el ancho al contenedor */
+}
+
+
+/* Estilos básicos para el modal */
+.modal {
+    font-family: "work sans";
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+    background-color: #F8F8F8;
+    padding: 40px 40px;
+    width: 100vh;
+    max-width: 392px;
+    position: relative;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.modal-content h2 {
+    color: #BD1414;
+    /* Rojo Talleres */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.modal-content input,
+.modal-content select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 2px solid #BD1414;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    padding: 12px 24px;
+    background-color: #BD1414;
+    color: #F8F8F8;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.modal-content button:hover {
+    background-color: #a10e0e;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #BD1414;
+}
+
+.mostrar-contraseña {
+    display: flex;
+}
+
 /* FIN SOCIOS*/
 
 
@@ -181,7 +672,11 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #BD1414;
+    flex-direction: column;
+    width: 100%;
+    align-items: center
 }
+
 
 
 
@@ -194,11 +689,154 @@ footer {
 padding: 12px 50px;
 }
 
+.fechas {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #141414;
+    width: 100%;
+    padding: 21px 108px 48px 80px;
+}
 
+.fechas a {
+    color: var(--blanco-escalada, #F8F8F8);
+text-align: center;
+font-family: "Bebas Neue";
+font-size: 40px;
+font-weight: 400;
+letter-spacing: 2px;
+text-align: center;
+}
+.fechas li a:hover {
+    color: #DF0E0D;
+    transform: scale(1.4);
+
+}
+
+
+.fechas p {
+    text-align: center;
+font-family: "Work Sans";
+font-size: 32px;
+font-weight: 400;
+letter-spacing: 1.6px;
+color: #F8F8F8;
+}
+
+.fechas li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia1906 {
+    display: flex;
+    height: 100%;
+
+}
+
+.historia1906 h3 { 
+    color: black; /* Color del texto */
+    margin-bottom: 10px; /* Ajusta el margen inferior si necesitas más espacio */
+    border-bottom: 4px solid #ca1610; /* Color y grosor de la línea */
+    padding-bottom: 5px ; /* Espacio entre el texto y la línea */
+}
+
+.historia-texto p {
+font-family: "Work Sans";
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+max-width: 750px;
+
+}
+
+
+
+.historia-texto { 
+    gap: 30px;
+}
 /*FIN HISTORIA*/
 
 
 /*NOTICIAS*/
+/* imagen TITULAR */
+.noticia-padre{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+#titular{
+    background-image: url(grupo1-img/html-noticias/articulo-titulo.png);
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#titular h2{
+    color: #F8F8F8;
+    background-color: #BD1414;
+    padding: 0.3em;}
+
+
+/* NOTICIA PRINCIPAL */
+#noticia-ppal{
+    display: flex;
+    justify-content: space-around;
+}
+#noticia-ppal article{
+    max-width: 1000px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+#noticia-ppal article p {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: "Work Sans", sans-serif;
+}
+#noticia-ppal article h3 {
+    border-bottom: 3px solid #BD1414;
+}
+
+
+.leyenda{
+    border: none;
+    font-size: 0.1em;
+}
+/* OTRAS NOTICIAS */
+#otras-noticias{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 3em;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+    padding: 1em;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    color: #F8F8F8;
+    border: 0.5em solid #BD1414 ;
+    background-image: url(grupo1-img/html-noticias/articulo-noticia.jpeg);
+    background-repeat: no-repeat;
+}
+
+
+.click-card button{
+    font-size: 12px;
+    padding: 10px;
+    color: #F8F8F8;
+    border: none;
+    background-color: #DF0E0D;}
+
 /*FIN NOTICIAS*/
 
 
@@ -207,7 +845,8 @@ padding: 12px 50px;
 
 
 
-/*MERCH*/
+
+/**MERCH**********************************************************************************************************/
 
 .producto {
     display: flex;
@@ -380,4 +1019,3 @@ padding: 10px;
 
 
 
-/*FIN MERCH*/
