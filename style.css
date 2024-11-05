@@ -262,8 +262,7 @@ footer {
 .carousel-item:hover .ver-mas {
     opacity: 1;
 }
-
-button {
+.next,.prev {
     background-color: #DF0E0D;
     color: #F8F8F8;
     border: none;
@@ -275,11 +274,11 @@ button {
     padding: 4px 12px 4px 10px;
 }
 
-button.prev {
+.prev {
     left: 60px;
 }
 
-button.next {
+.next {
     right: 60px;
 }
 
