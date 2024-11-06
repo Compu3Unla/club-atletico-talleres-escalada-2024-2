@@ -848,6 +848,11 @@ max-width: 750px;
 
 /**MERCH**********************************************************************************************************/
 
+.merch{
+display: flex;
+}
+
+
 .producto {
     display: flex;
     max-width: 900px;
@@ -862,6 +867,7 @@ max-width: 750px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 30px;
 }
 
 .imagen-principal img {
@@ -869,8 +875,6 @@ max-width: 750px;
     border: 1px solid red;
     padding: 10px;
     margin-bottom: 15px;
-
-
 
 }
 
@@ -885,7 +889,6 @@ max-width: 750px;
 
 
 }
-
 
 .camiseta {
     width: 55%;
@@ -910,25 +913,25 @@ max-width: 750px;
     margin-bottom: 20px;
 }
 
-.talles {
+.talla {
     margin-bottom: 15px;
     font-size: 22px;
-    
-    
+
 }
 
-.opciones-talles {
+.opciones-talla {
     gap: 20px;
     padding: 10px;
 }
 
 .opciones-talles button {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #ff0000;
     background-color: #fff;
 
 
 }
+
 
 .cantidad {
     margin-bottom: 20px;
@@ -978,11 +981,6 @@ padding: 10px;
     height: 30px;
 }
 
-.botones {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
 
 .agregar-carrito,
 .comprar {
@@ -990,14 +988,13 @@ padding: 10px;
     border: none;
     cursor: pointer;
     font-size: 12px;
-    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top:483px;
+    right:538px;
 }
 
-.agregar-carrito {
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-    border-radius: 4px;
-}
+
 
 
 .agregar-carrito:hover{
@@ -1008,7 +1005,9 @@ padding: 10px;
 .comprar {
     background-color: #000;
     color: #fff;
-    border-radius: 4px;
+    position: absolute;
+    top:523px;
+    right: 571px;
 }
 
 .comprar:hover {
