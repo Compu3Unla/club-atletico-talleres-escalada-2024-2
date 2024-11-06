@@ -644,7 +644,7 @@ footer {
 
 .tabla-precios th {
     background-color: #BD1414;
-    color: #fff;
+    color: #f8f8f8;
 }
 
 .asociarse {
@@ -661,8 +661,11 @@ footer {
     cursor: pointer;
 }
 
+
+/*****mi, nose si era que tenias que sacarlo o ponerle color a la tipo, pero aca esta el hover******/
 .asociarse:hover {
-    color: #DF0E0D;
+    background-color: #BD1414;
+    color: #F8F8F8;
 }
 
 
@@ -785,6 +788,9 @@ footer {
     position: relative;
     text-align: center;
     margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .close {
@@ -866,6 +872,9 @@ footer {
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    position: relative;
+    top: 119px;
+    left: 83px;
 }
 
 @keyframes rotation {
