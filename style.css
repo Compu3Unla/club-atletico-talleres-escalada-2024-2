@@ -341,6 +341,30 @@ footer {
 
 
 /* BANNER */
+.banner-index-socios {
+    background-image: url(grupo1-img/index/banner-publicitario-index.gif);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.socios-unite h6 {
+    font-size: 2em;
+    font-family: "Bebas Neue";
+
+}
+
+.leyenda-index {
+    display: flex;
+    gap: 3em;
+    font-family: "Bebas Neue";
+    justify-content: center;
+    align-items: center;
+    color: #F8F8F8;
+    background-color: #141414;
+    padding: 1em;
+}
+
+/*************************************************************************************************************/
 
 
 /*SECTION MERCH */
@@ -863,7 +887,7 @@ footer {
     padding: 50px;
 }
 
-.modal-content .confirmacion{
+.modal-content .confirmacion {
     font-family: "bebas neue";
 }
 
@@ -1200,7 +1224,7 @@ footer {
 
 .opciones-talles {
     gap: 20px;
-   
+
 
 }
 
