@@ -1004,9 +1004,11 @@ footer {
 
 }
 
+
 .miniaturas {
     display: flex;
     gap: 15px;
+
 }
 
 .miniaturas img {
@@ -1015,39 +1017,38 @@ footer {
 
 }
 
-
 .camiseta {
     width: 55%;
     padding: 20px;
 }
 
 .camiseta h1 {
-    font-size: 40px;
     color: #000000;
     margin-bottom: 10px;
+    font-family: "Bebas Neue";
 }
 
 .precio {
     font-size: 28px;
-    color: #000000;
     margin-bottom: 5px;
+    font-family: "Bebas Neue";
 }
 
 .cuotas {
-    font-size: 16px;
     color: #666;
     margin-bottom: 20px;
+    font-family: "Work Sans", sans-serif;
 }
 
 .talles {
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
 }
 
 .opciones-talles {
     gap: 20px;
-   
-
+font-family: "Work Sans", sans-serif;
 }
 
 .opciones-talles button {
@@ -1063,8 +1064,6 @@ button:hover {
 }
 
 
-
-
 .cantidad {
     margin-bottom: 20px;
 
@@ -1072,7 +1071,8 @@ button:hover {
 }
 
 .cantidad p {
-    font-size: 22px;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
 
 }
 
@@ -1089,20 +1089,22 @@ button:hover {
     background-color: #fff;
 
 
+
 }
 
 .selector-cantidad input {
     width: 40px;
     text-align: center;
     border: 1px solid #ff0000;
+    font-family: "Work Sans", sans-serif;
 
 
 
 }
 
 .metodos-pago {
-    margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
 
 }
 
@@ -1124,13 +1126,16 @@ button:hover {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 20px;
+font-family: "Bebas Neue";
 }
 
 .agregar-carrito {
     background-color: rgb(255, 0, 0);
     color: #fff;
+    position: absolute;
+    top:552px;
+    right: 556px;
 }
 
 
@@ -1143,8 +1148,9 @@ button:hover {
     background-color: #000;
     color: #fff;
     position: absolute;
-    top: 634px;
-    right: 590px;
+    top: 610px;
+    right: 592px;
+    font-family: "Bebas Neue";
 
 }
 
@@ -1152,3 +1158,7 @@ button:hover {
     background-color: #ff0000;
     transition: 0.3s ease;
 }
+
+
+
+/**FINAL MERCH**********************************************************************************************************/
