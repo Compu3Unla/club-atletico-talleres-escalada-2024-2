@@ -174,7 +174,7 @@ nav {
 footer {
     background-color: #000000;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -233,6 +233,8 @@ footer {
 .cuadros-fechas {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fixture-container {
@@ -341,30 +343,83 @@ footer {
 
 
 /* BANNER */
+.banner-index-socios {
+    background-image: url(grupo1-img/index/banner-publicitario-index.gif);
+    background-repeat: no-repeat;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.banner-index-socios a{
+    font-size: 80px;
+    font-family: "Bebas Neue";
+    padding: 2px 12px 0px 23px;
+    color: #f8f8f8;
+}
+
+.banner-index-socios a:hover{
+    background-color: #141414;
+    padding: 2px 12px 0px 23px;
+    color: #f8f8f8;
+}
+
+.banner-index-socios p {
+    font-family: "Work Sans";
+font-size: 36px;
+color: #f8f8f8;
+padding-top: 30px;
+}
+
+
+.boton-acete-socio { 
+    padding: 90px 50px;
+}
+
+.leyenda-index {
+    display: flex;
+    gap: 3em;
+    font-family: "Bebas Neue";
+    justify-content: center;
+    align-items: center;
+    color: #F8F8F8;
+    background-color: #141414;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+
+.leyenda-index p {
+
+}
+
+/*************************************************************************************************************/
 
 
 /*SECTION MERCH */
 /***********************************************aca empieza merch-carrousel ***********************************:)*/
 
 .galeria-index {
-    height: 100vh;
+    padding-top: 30px 0px;
 }
 
 .inicio-carousel h2 {
     text-align: center;
     color: #F8F8F8;
-    background-color: #141414;
+    background-color: #DF0E0D;
     padding: 20px 0px;
     letter-spacing: 0.5px;
+    margin-top: 30px;
 }
 
 .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     position: relative;
-    margin-top: 95px;
+    padding: 95px 0px;
 }
 
 .carousel {
@@ -486,7 +541,7 @@ footer {
 .deportes-icono {
     display: flex;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 90px 0px;
 }
 
 .deporte p {
@@ -620,7 +675,7 @@ footer {
 
 .tabla-precios th {
     background-color: #BD1414;
-    color: #fff;
+    color: #f8f8f8;
 }
 
 .asociarse {
@@ -637,8 +692,11 @@ footer {
     cursor: pointer;
 }
 
+
+/*****mi, nose si era que tenias que sacarlo o ponerle color a la tipo, pero aca esta el hover******/
 .asociarse:hover {
-    color: #DF0E0D;
+    background-color: #BD1414;
+    color: #F8F8F8;
 }
 
 
@@ -679,6 +737,7 @@ footer {
     /* Espacio entre el main y el aside */
     margin: 0 auto;
     /* Centra el contenedor en la página */
+    justify-content: space-around;
 }
 
 .socios-main {
@@ -761,6 +820,9 @@ footer {
     position: relative;
     text-align: center;
     margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .close {
@@ -842,6 +904,9 @@ footer {
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    position: relative;
+    left: 128px;
+    bottom: 25px;
 }
 
 @keyframes rotation {
@@ -863,7 +928,7 @@ footer {
     padding: 50px;
 }
 
-.modal-content .confirmacion{
+.modal-content .confirmacion {
     font-family: "bebas neue";
 }
 
@@ -947,10 +1012,6 @@ footer {
     text-align: center;
 }
 
-.fechas li a:hover {
-    color: #DF0E0D;
-    transform: scale(1.4);
-}
 
 
 .fechas p {
@@ -973,6 +1034,8 @@ footer {
     transform: scale(1.4);
 }
 
+
+
 /* section 2 historia*/
 
 
@@ -993,7 +1056,6 @@ footer {
 .tit-historia {
     font-size: 40px;
     letter-spacing: 1.6px;
-    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
     color: #141414;
 }
 
@@ -1013,6 +1075,11 @@ footer {
     gap: 20px;
 }
 
+.pie-foto {
+    font-size: 12px;
+}
+
+
 .tit-historia {
     max-width: 1000px;
     display: flex;
@@ -1020,7 +1087,7 @@ footer {
     gap: 40px;
 }
 
-.tit-historia h3 {
+.historia1906 h3 {
     width: 100%;
     font-size: 40px;
     letter-spacing: 1.6px;
@@ -1097,7 +1164,8 @@ footer {
 
 .leyenda {
     border: none;
-    font-size: 0.1em;
+    font-size: 1em;
+    font-family: "Work Sans", sans-serif;
 }
 
 /* OTRAS NOTICIAS */
@@ -1133,13 +1201,6 @@ footer {
 }
 
 /*FIN NOTICIAS*/
-
-
-
-
-
-
-
 
 /**MERCH**********************************************************************************************************/
 
@@ -1321,7 +1382,4 @@ font-family: "Bebas Neue";
     background-color: #ff0000;
     transition: 0.3s ease;
 }
-
-
-
 /**FINAL MERCH**********************************************************************************************************/
