@@ -754,9 +754,8 @@ footer {
 
 .video-contenedor video {
     width: 1300px;
-    height: 750px;
+    height: 100%;
     /* Ajusta el ancho del video según prefieras */
-    max-width: 1200px;
     /* Máximo ancho del video */
 }
 
@@ -764,7 +763,7 @@ footer {
 .historia h2 {
     position: relative;
     bottom: 200px;
-    left: 352px;
+    left: 301px;
     color: #BD1414;
     background-color: #F8F8F8;
     width: 500px;
