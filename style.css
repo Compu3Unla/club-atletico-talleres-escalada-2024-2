@@ -219,7 +219,126 @@ footer {
 /*GALERIA SLIDER */
 
 
+/***********************************************aca empieza el fixture ***********************************:)*/
 /* FIXTURE*/
+
+.inicio-index h2 {
+    text-align: center;
+    color: #F8F8F8;
+    background-color: #bd1414;
+    padding: 20px 0px;
+    letter-spacing: 0.5px;
+}
+
+.cuadros-fechas {
+    display: flex;
+    justify-content: center;
+}
+
+.fixture-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: #FFFFFF;
+    height: 300px;
+    width: 1000px;
+    padding: 40px 0px;
+}
+
+
+/* Estilo general para cada sección (anterior, próximo y posiciones) */
+.match-previous,
+.standings {
+    border: 4px solid #BD1414;
+    padding: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+
+/* Títulos de cada sección */
+.match-previous h3,
+.standings h3 {
+    font-size: 32px;
+    color: #BD1414;
+    margin-bottom: 10px;
+}
+
+
+/* Contenido de los equipos y resultados */
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.teams img {
+    width: 40px;
+    height: auto;
+}
+
+
+.date {
+    color: #BD1414;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+.link {
+    color: #BD1414;
+    border-bottom: 1px solid var(--Rojo-Bastn, #DF0E0D);
+    font-size: 20px;
+    font-family: "work sans";
+    font-variant: small-caps;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/* Tabla de posiciones */
+.standings table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    background-color: whitesmoke;
+}
+
+
+.standings th,
+.standings td {
+    padding: 1px;
+    border: 1px solid #BD1414;
+    font-family: "work sans";
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-variant: all-petite-caps;
+    font-size: 16px;
+}
+
+.standings th {
+    font-weight: 700;
+}
+
+
+
+.standings .highlight {
+    background-color: #bd1414;
+    color: #F8F8F8
+}
+
+.teams span {
+    font-size: 25px;
+}
+
+/* FIN FIXTURE*/
+
+
 
 /* BANNER */
 
@@ -386,9 +505,6 @@ footer {
 
 
 /* Fin Section noticias*/
-
-
-/*SECTION sponsors */
 
 
 /**********************************************************************SECTION sponsorS************************************************/
@@ -573,7 +689,7 @@ footer {
     gap: 31px;
 }
 
-/* Estilos del Banner Publicitario */
+/* Estilos del Banner Publicitario en socios */
 
 .banner-publicitario {
     width: 300px;
@@ -677,6 +793,7 @@ footer {
     font-size: 1em;
     border: 2px solid #BD1414;
     box-sizing: border-box;
+    font-family: 'Work Sans';
 }
 
 .modal-content button {
@@ -688,6 +805,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 10px;
+    font-family: 'Work Sans';
 }
 
 .modal-content button:hover {
@@ -701,7 +819,7 @@ footer {
 
 .password-container input[type="password"] {
     width: 100%;
-    padding-right: 30px; /* Espacio para el ícono */
+    padding-right: 30px;
 }
 
 .toggle-password {
@@ -711,6 +829,42 @@ footer {
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 1.2em;
+}
+
+
+.loader {
+    margin-top: 90px;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #bd1414;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.modal-content hgroup {
+    padding: 20px;
+}
+
+.modal-content .check {
+    padding: 50px;
+}
+
+.modal-content .confirmacion{
+    font-family: "bebas neue";
 }
 
 /* Estilo para el botón de cerrar */
@@ -836,9 +990,17 @@ footer {
     padding: 20px;
 }
 
+.tit-historia {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
+    color: #141414;
+}
+
+
 .historia-2 {
     display: flex;
-    height:100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 100px;
@@ -848,12 +1010,12 @@ footer {
 #foto-historia {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .tit-historia {
     max-width: 1000px;
-    display:flex ;
+    display: flex;
     flex-direction: column;
     gap: 40px;
 }
@@ -981,13 +1143,10 @@ footer {
 
 /**MERCH**********************************************************************************************************/
 
-.producto {
+.merch {
     display: flex;
-    max-width: 900px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    padding: 50px;
 }
 
 .galeria {
@@ -1002,8 +1161,6 @@ footer {
     border: 1px solid red;
     padding: 10px;
     margin-bottom: 15px;
-
-
 
 }
 
@@ -1045,39 +1202,44 @@ footer {
 .talles {
     margin-bottom: 15px;
     font-size: 22px;
-
-
 }
 
 .opciones-talles {
     gap: 20px;
-    padding: 10px;
+   
+
 }
 
 .opciones-talles button {
     padding: 8px;
     border: 1px solid #ccc;
     background-color: #fff;
-
-
+    margin: 5px
 }
+
+
+button:hover {
+    background-color: #ff0000;
+}
+
+
+
 
 .cantidad {
     margin-bottom: 20px;
 
+
 }
 
 .cantidad p {
-    margin: 0;
     font-size: 22px;
 
 }
 
 .selector-cantidad {
-    display: flex;
-    align-items: center;
     gap: 5px;
     padding: 10px;
+
 
 }
 
@@ -1085,30 +1247,31 @@ footer {
     padding: 5px;
     border: 1px solid #ff0000;
     background-color: #fff;
+
+
 }
 
 .selector-cantidad input {
-    width: 50px;
+    width: 40px;
     text-align: center;
     border: 1px solid #ff0000;
+
+
 
 }
 
 .metodos-pago {
     margin-bottom: 20px;
-    font-weight: bold;
     font-size: 22px;
+
 }
 
 .iconos {
     display: flex;
     gap: 10px;
+    padding: 10px;
 }
 
-.iconos img {
-    width: 30px;
-    height: 30px;
-}
 
 .botones {
     display: flex;
@@ -1128,7 +1291,6 @@ footer {
 .agregar-carrito {
     background-color: rgb(255, 0, 0);
     color: #fff;
-    border-radius: 4px;
 }
 
 
@@ -1140,7 +1302,10 @@ footer {
 .comprar {
     background-color: #000;
     color: #fff;
-    border-radius: 4px;
+    position: absolute;
+    top: 634px;
+    right: 590px;
+
 }
 
 .comprar:hover {
