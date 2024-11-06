@@ -273,6 +273,20 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal(4)">&times;</span>
             <h2>Esperando confirmación</h2>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <img class="check" src="grupo1-img/html-socios-form/img-check.png" width="" height="">
+            <hgroup>
+                <h2 class="confirmacion">Bienvenido Albirrojo!</h2>
+                <p>Te hemos enviado un correo para que confirmes tu cuenta. Verificá tu carpeta de correo no deseado si
+                es necesario (spam)</p>
+            </hgroup>
         </div>
     </div>
 
@@ -305,19 +319,6 @@
             document.getElementById('modal' + modalNumber).style.display = 'none';
         }
 
-        // Función para ir al siguiente modal
-        function nextModal(currentModal, nextModal) {
-            closeModal(currentModal);
-            openModal(nextModal);
-        }
-
-        // Función para ir al modal anterior
-        function previousModal(currentModal, previousModal) {
-            closeModal(currentModal);
-            openModal(previousModal);
-        }
-
-
         function nextModal(currentModal, nextModal) {
             // Obtener el formulario dentro del modal actual
             const form = document.querySelector(`#modal${currentModal} form`);
@@ -326,6 +327,14 @@
             if (form.checkValidity()) {
                 closeModal(currentModal);
                 openModal(nextModal);
+
+                // Si estamos en el modal 4 (esperando confirmación), espera unos segundos y luego muestra el modal 5
+                if (nextModal === 4) {
+                    setTimeout(() => {
+                        closeModal(4); // Cierra el modal de "Esperando confirmación"
+                        openModal(5);   // Abre el modal de "Confirmación"
+                    }, 3000); // Espera 3 segundos (3000 ms), puedes ajustar el tiempo según prefieras
+                }
             } else {
                 // Si el formulario no es válido, muestra los mensajes de error
                 form.reportValidity();
