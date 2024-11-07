@@ -115,7 +115,7 @@ body {
 /****************nav********/
 
 nav {
-    background-color: #000000;
+    background-color: #141414;
     padding: 15px, 99px;
 }
 
@@ -153,7 +153,7 @@ nav {
 .menu-vertical li a {
     display: block;
     padding: 15px 20px;
-    color: #000000;
+    color: #141414;
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
 }
@@ -179,7 +179,7 @@ nav {
 
 /*FOOTER*/
 footer {
-    background-color: #000000;
+    background-color: #141414;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -399,9 +399,6 @@ footer {
     width: 100%;
 }
 
-
-.leyenda-index p {}
-
 /*************************************************************************************************************/
 
 
@@ -522,7 +519,7 @@ footer {
 
 /*SECTION deportes */
 .nombre {
-    background-color: #000000;
+    background-color: #141414;
     color: #ffffff;
     padding: 20px;
 
@@ -820,12 +817,15 @@ footer {
     color: #F8F8F8;
     text-decoration: none;
     margin-top: 10px;
+    font-size: 22px;
 }
 
+.boton-tienda:hover {
+    color: #DF0E0D; 
+}
 
 .banner-publicitario img {
     width: 100%;
-    /* Ajusta el ancho al contenedor */
 }
 
 
@@ -1256,7 +1256,7 @@ footer {
 }
 
 .imagen-principal img {
-    border: 1px solid red;
+    border: 1px solid #DF0E0D;
     padding: 0px 17px;
     margin-bottom: 21px;
 
@@ -1455,7 +1455,7 @@ footer {
         display: block;
         font-size: 28px;
         margin: 0;
-        color: #ffffff;
+        color: #f8f8f8;
         position: absolute;
         top: 39px;
         right: 87PX;
@@ -1490,7 +1490,7 @@ footer {
     .menu-horizontal {
         display: none;
         flex-direction: column;
-        background-color: #000000;
+        background-color: #141414;
         padding: 10px;
     }
 
@@ -1610,7 +1610,7 @@ footer {
     }
 
     footer {
-        background-color: #000000;
+        background-color: #141414;
         display: flex;
         align-items: center;
         /* justify-content: space-between; */
