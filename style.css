@@ -399,9 +399,6 @@ footer {
     width: 100%;
 }
 
-
-.leyenda-index p {}
-
 /*************************************************************************************************************/
 
 
@@ -825,12 +822,15 @@ footer {
     color: #F8F8F8;
     text-decoration: none;
     margin-top: 10px;
+    font-size: 22px;
 }
 
+.boton-tienda:hover {
+    color: #DF0E0D; 
+}
 
 .banner-publicitario img {
     width: 100%;
-    /* Ajusta el ancho al contenedor */
 }
 
 
