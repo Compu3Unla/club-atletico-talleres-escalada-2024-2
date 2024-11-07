@@ -25,16 +25,16 @@ h1 {
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 45px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 1.6px;
 }
 
 h4 {
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 1.28px;
 }
 
@@ -244,7 +244,7 @@ footer {
     background-color: #FFFFFF;
     height: 300px;
     width: 1000px;
-    padding: 40px 0px;
+    padding: 95px 0px;
 }
 
 
@@ -261,7 +261,6 @@ footer {
 /* Títulos de cada sección */
 .match-previous h3,
 .standings h3 {
-    font-size: 32px;
     color: #BD1414;
     margin-bottom: 10px;
 }
@@ -353,14 +352,14 @@ footer {
     align-items: flex-end;
 }
 
-.banner-index-socios a{
+.banner-index-socios a {
     font-size: 80px;
     font-family: "Bebas Neue";
     padding: 2px 12px 0px 23px;
     color: #f8f8f8;
 }
 
-.banner-index-socios a:hover{
+.banner-index-socios a:hover {
     background-color: #141414;
     padding: 2px 12px 0px 23px;
     color: #f8f8f8;
@@ -368,13 +367,13 @@ footer {
 
 .banner-index-socios p {
     font-family: "Work Sans";
-font-size: 36px;
-color: #f8f8f8;
-padding-top: 30px;
+    font-size: 36px;
+    color: #f8f8f8;
+    padding-top: 30px;
 }
 
 
-.boton-acete-socio { 
+.boton-acete-socio {
     padding: 90px 50px;
 }
 
@@ -391,14 +390,12 @@ padding-top: 30px;
 }
 
 
-.leyenda-index p {
-
-}
+.leyenda-index p {}
 
 /*************************************************************************************************************/
 
 
-/*SECTION MERCH */
+/*SECTION MERCH INDEX */
 /***********************************************aca empieza merch-carrousel ***********************************:)*/
 
 .galeria-index {
@@ -522,10 +519,6 @@ padding-top: 30px;
 }
 
 .nombre h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-family: "Bebas Neue";
-    font-size: 30px;
     display: flex;
     justify-content: center;
 }
@@ -639,10 +632,9 @@ padding-top: 30px;
 
 
 
-.sponsors h3 {
+.sponsors h4 {
     text-align: center;
     font-family: "Work Sans";
-    font-size: 24px;
     color: #F8F8F8;
     padding: 30px 0px;
 }
@@ -823,8 +815,6 @@ padding-top: 30px;
 
 .boton-tienda {
     padding: 13px 34px;
-    justify-content: center;
-    align-items: center;
     display: inline-block;
     background-color: #141414;
     color: #F8F8F8;
@@ -1243,34 +1233,32 @@ padding-top: 30px;
 
 /*FIN NOTICIAS*/
 
-/**MERCH**********************************************************************************************************/
+/*********************************MERCH**********************************************************************************************************/
 
 .merch {
     display: flex;
     height: 100vh;
-    padding: 50px;
+    align-items: center;
 }
 
 .galeria {
-    width: 45%;
+    width: 76%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .imagen-principal img {
-    width: 100%;
     border: 1px solid red;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 0px 17px;
+    margin-bottom: 21px;
 
 }
 
 
 .miniaturas {
     display: flex;
-    gap: 15px;
-
+    gap: 21px;
 }
 
 .miniaturas img {
@@ -1279,7 +1267,7 @@ padding-top: 30px;
 
 }
 
-.camiseta {
+.info-camiseta {
     width: 55%;
     padding: 20px;
 }
@@ -1287,7 +1275,6 @@ padding-top: 30px;
 .camiseta h1 {
     color: #000000;
     margin-bottom: 10px;
-    font-family: "Bebas Neue";
 }
 
 
@@ -1296,36 +1283,58 @@ padding-top: 30px;
 .precio {
     font-size: 28px;
     margin-bottom: 5px;
-    font-family: "Bebas Neue";
 }
 
 .cuotas {
-    color: #666;
+    color: #141414;
     margin-bottom: 20px;
     font-family: "Work Sans", sans-serif;
 }
 
 .talles {
-    margin-bottom: 15px;
+    padding: 30px 0px;
     font-size: 18px;
     font-family: "Work Sans", sans-serif;
+    font-weight: 400;
 }
 
 .opciones-talles {
     gap: 20px;
-font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
-.opciones-talles button {
+/*.opciones-talles button {
     padding: 8px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #030303;
+    background-color: #f8f8f8;
     margin: 5px
 }
 
 
 button:hover {
-    background-color: #ff0000;
+    background-color: #141414;
+    color: #f8f8f8;
+}
+*/
+
+.opciones-talles button {
+    padding: 8px;
+    border: 1px solid #030303;
+    background-color: #f8f8f8;
+    color: #030303;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.opciones-talles button:hover {
+    background-color: #141414;
+    color: #f8f8f8;
+}
+
+/* Estilo para el botón seleccionado */
+.opciones-talles button.active {
+    background-color: #141414;
+    color: #f8f8f8;
 }
 
 
@@ -1350,8 +1359,8 @@ button:hover {
 
 .selector-cantidad button {
     padding: 5px;
-    border: 1px solid #ff0000;
-    background-color: #fff;
+    border: 1px solid #DF0E0D;
+    background-color: #f8f8f8;
 
 
 
@@ -1360,23 +1369,27 @@ button:hover {
 .selector-cantidad input {
     width: 40px;
     text-align: center;
-    border: 1px solid #ff0000;
+    border: 1px solid #DF0E0D;
     font-family: "Work Sans", sans-serif;
-
-
-
+    height: 25px;
 }
+
 
 .metodos-pago {
     font-size: 18px;
     font-family: "Work Sans", sans-serif;
-
+    padding: 13px 0px;
 }
+
+.metodos-pago p {
+    padding: 13px 0px;
+}
+
 
 .iconos {
     display: flex;
     gap: 10px;
-    padding: 10px;
+    align-items: center;
 }
 
 
@@ -1384,6 +1397,10 @@ button:hover {
     display: flex;
     gap: 10px;
     margin-top: 15px;
+    flex-direction: column;
+    width: 400px;
+    min-width: 300px;
+    padding: 13px 0px;
 }
 
 .agregar-carrito,
@@ -1391,36 +1408,62 @@ button:hover {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
-font-family: "Bebas Neue";
+    font-size: 24px;
+    font-family: "Bebas Neue";
 }
 
 .agregar-carrito {
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-    position: absolute;
-    top:552px;
-    right: 556px;
+    background-color: #DF0E0D;
+    color: #f8f8f8;
+
 }
 
 
 .agregar-carrito:hover {
-    background-color: #000000;
+    background-color: #141414;
     transition: 0.3s ease;
 }
 
 .comprar {
-    background-color: #000;
-    color: #fff;
-    position: absolute;
-    top: 610px;
-    right: 592px;
+    background-color: #141414;
+    color: #f8f8f8;
     font-family: "Bebas Neue";
 
 }
 
 .comprar:hover {
-    background-color: #ff0000;
+    background-color: #DF0E0D;
     transition: 0.3s ease;
 }
+
 /**FINAL MERCH**********************************************************************************************************/
+@media screen and (max-width: 600px) {
+    .noticias-principales img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+
+    .noticias-principales img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .fixture-container {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .actividades-index {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
