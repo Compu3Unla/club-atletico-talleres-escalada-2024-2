@@ -581,6 +581,7 @@ footer {
 
 .container-actividades img {
     max-width: auto;
+    width: 100%;
 }
 
 .imagen-actividades {
@@ -821,7 +822,7 @@ footer {
 }
 
 .boton-tienda:hover {
-    color: #DF0E0D; 
+    color: #DF0E0D;
 }
 
 .banner-publicitario img {
