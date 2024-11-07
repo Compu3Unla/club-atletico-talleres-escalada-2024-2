@@ -815,6 +815,15 @@ max-width: 750px;
 }
 
 
+h3 img{
+    border: 0.2em solid #BD1414 ;
+}
+
+
+h3 p{
+    padding: 20px;
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -823,10 +832,9 @@ max-width: 750px;
     gap: 1em;
     align-items: center;
     justify-content: space-between;
-    color: #F8F8F8;
-    border: 0.5em solid #BD1414 ;
-    background-image: url(grupo1-img/html-noticias/articulo-noticia.jpeg);
+    color: #141414;
     background-repeat: no-repeat;
+    font-family: "Work Sans", sans-serif;
 }
 
 
