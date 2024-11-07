@@ -25,16 +25,16 @@ h1 {
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 45px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 1.6px;
 }
 
 h4 {
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 1.28px;
 }
 
@@ -244,7 +244,7 @@ footer {
     background-color: #FFFFFF;
     height: 300px;
     width: 1000px;
-    padding: 40px 0px;
+    padding: 95px 0px;
 }
 
 
@@ -261,7 +261,6 @@ footer {
 /* Títulos de cada sección */
 .match-previous h3,
 .standings h3 {
-    font-size: 32px;
     color: #BD1414;
     margin-bottom: 10px;
 }
@@ -520,10 +519,6 @@ footer {
 }
 
 .nombre h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-family: "Bebas Neue";
-    font-size: 30px;
     display: flex;
     justify-content: center;
 }
@@ -596,10 +591,9 @@ footer {
 
 
 
-.sponsors h3 {
+.sponsors h4 {
     text-align: center;
     font-family: "Work Sans";
-    font-size: 24px;
     color: #F8F8F8;
     padding: 30px 0px;
 }
@@ -780,8 +774,6 @@ footer {
 
 .boton-tienda {
     padding: 13px 34px;
-    justify-content: center;
-    align-items: center;
     display: inline-block;
     background-color: #141414;
     color: #F8F8F8;
