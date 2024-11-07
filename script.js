@@ -35,3 +35,20 @@ function togglePasswordVisibility(passwordFieldId, iconElement) {
     }
 }
 
+
+
+//  merch 
+// Seleccionamos todos los botones dentro de la clase opciones-talles
+const botonesTalles = document.querySelectorAll('.opciones-talles button');
+
+// Añadimos un evento de clic a cada botón
+botonesTalles.forEach(button => {
+    button.addEventListener('click', () => {
+        // Quitamos la clase 'active' de todos los botones
+        botonesTalles.forEach(btn => btn.classList.remove('active'));
+        
+        // Añadimos la clase 'active' al botón seleccionado
+        button.classList.add('active');
+    });
+});
+
