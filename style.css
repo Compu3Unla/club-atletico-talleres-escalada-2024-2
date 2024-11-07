@@ -553,11 +553,52 @@ padding-top: 30px;
 }
 
 /*Section noticias DEL CLUB*/
+.actividades-box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    gap: 20px;
+}
 .actividades-index {
     display: flex;
     padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+.actividades-index h4{
+    padding: 20px;
+    color: #F8F8F8;
+    background-color: #DF0E0D;
+    width: 40%;
+}
+/* section de backgrounds-images de actividades */
+.actividad-index-voley{
+    background-image: url(grupo1-img/index/noticias/index-noticias-deportes1.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 334px;
 }
 
+.actividad-index-basket{
+    background-image: url(grupo1-img/index/noticias/index-noticias-deportes2.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 334px;
+}
+
+.actividad-index-futbolfem{
+    background-image: url(grupo1-img/index/noticias/index-noticias-deportes3.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 334px;
+}
+
+.actividad-index-escuelita{
+    background-image: url(grupo1-img/index/noticias/index-noticias-deportes4.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 334px;
+}
 
 /* Fin Section noticias*/
 
