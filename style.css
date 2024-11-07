@@ -148,7 +148,6 @@ nav {
     display: none;
     width: 164px;
     background-color: #F8F8F8;
-    border-radius: 10px;
 }
 
 .menu-vertical li a {
@@ -249,7 +248,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
     background-color: #F8F8F8;
+
+
     height: 300px;
     width: 1000px;
     padding: 95px 0px;
@@ -721,7 +723,12 @@ footer {
     padding: 24px;
     justify-content: center;
     display: flex;
+
     width: 886px;
+
+    width: 100%;
+    align-items: flex-start;
+
     color: #F8F8F8;
     background-color: #141414;
     font-family: "Bebas Neue";
