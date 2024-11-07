@@ -58,7 +58,6 @@ body {
 }
 
 .banner-ppal {
-    display: flex;
     background-image: url(grupo1-img/index/banner-header.jpg);
     padding: 20px;
     background-repeat: no-repeat;
@@ -95,7 +94,6 @@ body {
 }
 
 .noticias-principales img {
-    width: 100%;
     height: auto;
 }
 
@@ -191,8 +189,6 @@ footer {
 .copy {
     color: #F8F8F8;
     font-size: 20px;
-    padding: 20px;
-    font-weight: 400;
     font-family: "Work Sans", sans-serif;
     padding: 10px 30px;
 }
@@ -235,10 +231,12 @@ footer {
 .inicio-index h2 {
     text-align: center;
     color: #F8F8F8;
-    background-color: #bd1414;
+    background-color: #DF0E0D;
     padding: 20px 0px;
     letter-spacing: 0.5px;
+    margin-top: 40px;
 }
+
 
 .cuadros-fechas {
     display: flex;
@@ -251,7 +249,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    background-color: #FFFFFF;
+    background-color: #F8F8F8;
     height: 300px;
     width: 1000px;
     padding: 95px 0px;
@@ -418,7 +416,7 @@ footer {
     background-color: #DF0E0D;
     padding: 20px 0px;
     letter-spacing: 0.5px;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .carousel-container {
@@ -662,14 +660,10 @@ footer {
 
 /*SOCIOS*/
 
-/*SOCIOS*/
 
 .h3-socios {
-    font-family: "Bebas Neue";
     font-size: 40px;
-    letter-spacing: 1.6px;
-    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
-    color: #141414;
+    border-bottom: 3px solid #BD1414;
 }
 
 
@@ -716,7 +710,6 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 32px;
-    font-weight: 400;
 }
 
 .tabla-precios th {
@@ -729,7 +722,6 @@ footer {
     justify-content: center;
     display: flex;
     width: 886px;
-    align-items: flex-start;
     color: #F8F8F8;
     background-color: #141414;
     font-family: "Bebas Neue";
@@ -757,19 +749,12 @@ footer {
 .informacion p,
 .atencion-cliente p {
     margin-top: 15px;
-    color: var(--Negro-tallarin, #141414);
     font-family: "Work Sans";
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 29px;
 }
 
 .informacion p strong {
-    color: #141414;
-    font-family: "Work Sans";
-    font-size: 24px;
-    font-style: normal;
     font-weight: 800;
     line-height: normal;
     font-variant: small-caps;
@@ -1016,7 +1001,6 @@ footer {
 }
 
 .video-contenedor video {
-    width: 1300px;
     height: 100%;
     /* Ajusta el ancho del video según prefieras */
     /* Máximo ancho del video */
@@ -1040,7 +1024,7 @@ footer {
     justify-content: space-evenly;
     background-color: #141414;
     width: 100%;
-    padding: 30px 0px 30px 0px;
+    padding: 45px 0px 49px 0px;
     position: relative;
     bottom: 113px;
     z-index: 15;
@@ -1119,8 +1103,12 @@ footer {
     gap: 20px;
 }
 
-.pie-foto {
+#foto-historia a {
+    font-family: "Work Sans";
     font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: #141414;
 }
 
 
@@ -1135,15 +1123,20 @@ footer {
     width: 100%;
     font-size: 40px;
     letter-spacing: 1.6px;
-    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
+    border-bottom: 3px solid #BD1414;
     color: #141414;
+    position: relative;
+    max-width: 82%;
+    top: 13%;
+    left: 8%;
 }
 
-.historia-2 p {
 
+
+
+.historia-2 p {
     font-family: "Work Sans";
     font-size: 24px;
-    font-weight: 400;
     line-height: 29px;
     max-width: 750px;
 }
@@ -1161,7 +1154,6 @@ footer {
 .noticia-padre {
     display: flex;
     flex-direction: column;
-    gap: 2em;
 }
 
 #titular {
@@ -1276,7 +1268,7 @@ footer {
 
 .miniaturas img {
     width: 30%;
-    border: 1px solid #ff0000;
+    border: 1px solid #DF0E0D;
 
 }
 
@@ -1286,7 +1278,7 @@ footer {
 }
 
 .camiseta h1 {
-    color: #000000;
+    color: #141414;
     margin-bottom: 10px;
 }
 
@@ -1299,7 +1291,6 @@ footer {
 }
 
 .cuotas {
-    color: #141414;
     margin-bottom: 20px;
     font-family: "Work Sans", sans-serif;
 }
@@ -1316,25 +1307,12 @@ footer {
     font-family: "Work Sans", sans-serif;
 }
 
-/*.opciones-talles button {
-    padding: 8px;
-    border: 1px solid #030303;
-    background-color: #f8f8f8;
-    margin: 5px
-}
 
-
-button:hover {
-    background-color: #141414;
-    color: #f8f8f8;
-}
-*/
 
 .opciones-talles button {
     padding: 8px;
-    border: 1px solid #030303;
+    border: 1px solid #141414;
     background-color: #f8f8f8;
-    color: #030303;
     margin: 5px;
     cursor: pointer;
 }
@@ -1353,21 +1331,15 @@ button:hover {
 
 .cantidad {
     margin-bottom: 20px;
-
-
 }
 
 .cantidad p {
     font-size: 18px;
     font-family: "Work Sans", sans-serif;
-
 }
 
 .selector-cantidad {
-    gap: 5px;
-    padding: 10px;
-
-
+    padding-top: 10px;
 }
 
 .selector-cantidad button {
@@ -1552,19 +1524,20 @@ button:hover {
         flex-direction: column;
         height: 100%;
     }
-  /* merch */ 
 
-/* *************merch**************/
-.carousel-item {
-    position: relative;
-    min-width: 25%;
-    text-align: center;
-}
+    /* merch */
 
-.next,
-.prev {
-    display: none;
-}
+    /* *************merch**************/
+    .carousel-item {
+        position: relative;
+        min-width: 25%;
+        text-align: center;
+    }
+
+    .next,
+    .prev {
+        display: none;
+    }
 
 
 
@@ -1636,12 +1609,13 @@ button:hover {
 
     footer {
         background-color: #000000;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    gap: 23px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        gap: 23px;
     }
+
     .copy {
         padding: 29px 0px;
         display: flex;

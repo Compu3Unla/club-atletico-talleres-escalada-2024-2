@@ -1,3 +1,4 @@
+// Carrusel de imágenes
 let currentIndex = 0;
 const itemsToShow = 4; // Número de elementos a mostrar al mismo tiempo
 
@@ -21,7 +22,7 @@ function moveSlide(direction) {
     carouselTrack.style.transform = `translateX(${offset}%)`;
 }
 
-// click para visualizar contraseñas
+// Mostrar/Ocultar contraseñas
 function togglePasswordVisibility(passwordFieldId, iconElement) {
     const passwordField = document.getElementById(passwordFieldId);
     const toggleIcon = iconElement.querySelector("img");
@@ -35,13 +36,8 @@ function togglePasswordVisibility(passwordFieldId, iconElement) {
     }
 }
 
-
-
-//  merch 
-// Seleccionamos todos los botones dentro de la clase opciones-talles
+// Selección de talles
 const botonesTalles = document.querySelectorAll('.opciones-talles button');
-
-// Añadimos un evento de clic a cada botón
 botonesTalles.forEach(button => {
     button.addEventListener('click', () => {
         // Quitamos la clase 'active' de todos los botones
@@ -52,13 +48,8 @@ botonesTalles.forEach(button => {
     });
 });
 
-
-
-// BOTON HAMBURGUESA 
-<script>
-    function toggleMenu() {
-        const menu = document.querySelector('.menu-horizontal');
-        menu.classList.toggle('active');
-    }
-</script>
-
+// Menú hamburguesa
+function toggleMenu() {
+    const menu = document.querySelector('.menu-horizontal');
+    menu.classList.toggle('active');
+}
