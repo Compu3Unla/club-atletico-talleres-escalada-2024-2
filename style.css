@@ -38,7 +38,17 @@ h4 {
     letter-spacing: 1.28px;
 }
 
+.hamburger {
+    display: none;
+}
 
+.menu-horizontal-responsive h2 {
+    display: none;
+}
+
+.noticia-responsive {
+    display: none;
+}
 
 /*index*/
 body {
@@ -104,7 +114,7 @@ body {
 }
 
 
-
+/****************nav********/
 
 nav {
     background-color: #000000;
@@ -546,47 +556,50 @@ footer {
 }
 
 /*Section noticias DEL CLUB*/
-.actividades-box{
+.actividades-box {
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
     gap: 20px;
 }
+
 .actividades-index {
     display: flex;
     padding: 30px;
     flex-direction: column;
     gap: 20px;
 }
-.actividades-index h4{
+
+.actividades-index h4 {
     padding: 20px;
     color: #F8F8F8;
     background-color: #DF0E0D;
     width: 40%;
 }
+
 /* section de backgrounds-images de actividades */
-.actividad-index-voley{
+.actividad-index-voley {
     background-image: url(grupo1-img/index/noticias/index-noticias-deportes1.jpg);
     background-repeat: no-repeat;
     width: 800px;
     height: 334px;
 }
 
-.actividad-index-basket{
+.actividad-index-basket {
     background-image: url(grupo1-img/index/noticias/index-noticias-deportes2.jpg);
     background-repeat: no-repeat;
     width: 800px;
     height: 334px;
 }
 
-.actividad-index-futbolfem{
+.actividad-index-futbolfem {
     background-image: url(grupo1-img/index/noticias/index-noticias-deportes3.jpg);
     background-repeat: no-repeat;
     width: 800px;
     height: 334px;
 }
 
-.actividad-index-escuelita{
+.actividad-index-escuelita {
     background-image: url(grupo1-img/index/noticias/index-noticias-deportes4.jpg);
     background-repeat: no-repeat;
     width: 800px;
@@ -632,7 +645,7 @@ footer {
 
 
 
-.sponsors h4 {
+.sponsors h3 {
     text-align: center;
     font-family: "Work Sans";
     color: #F8F8F8;
@@ -1436,34 +1449,182 @@ button:hover {
     transition: 0.3s ease;
 }
 
+
 /**FINAL MERCH**********************************************************************************************************/
+
+
+/*******comienzo responsive***************************/
+
 @media screen and (max-width: 600px) {
-    .noticias-principales img {
-        max-width: 100%;
-        height: 100%;
+
+    h2 {
+        font-size: 26px;
     }
 
-    body {
-        width: 100%;
+    .banner-ppal {
+        display: block;
+        text-align: center;
+        /* Opcional: centra el título */
+    }
+
+    .banner-ppal {
+        display: none;
+        background-image: none;
+    }
+
+    .banner-ppal img,
+    .banner-ppal a {
+        display: none;
+    }
+
+    .menu-horizontal-responsive h2 {
+        display: block;
+        font-size: 28px;
+        margin: 0;
+        color: #ffffff;
+        position: absolute;
+        top: 39px;
+        right: 87PX;
     }
 
 
-    .noticias-principales img {
+
+    .noticias-principales {
+        display: none;
+    }
+
+    /* Muestra la imagen específica para responsive */
+    .noticia-responsive {
+        display: block;
+    }
+
+    /* Ajusta la imagen para que ocupe todo el ancho en responsive */
+    .noticia-responsive img {
         width: 100%;
         height: auto;
     }
 
-
-
-    .fixture-container {
-        width: 55%;
-        display: flex;
-        flex-direction: column;
+    /* *******************Estilos responsive para menú hamburguesa *****************/
+    .hamburger {
+        display: none;
+        font-size: 30px;
+        color: #F8F8F8;
+        cursor: pointer;
+        padding: 35px;
     }
 
-    .actividades-index {
+    .menu-horizontal {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-horizontal li a {
+        font-size: 24px;
+    }
+
+    .menu-horizontal.active {
+        display: flex;
+    }
+
+
+
+
+    /* *******************Estilos responsive para menú hamburguesa *****************/
+
+
+    .cuadros-fechas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .fixture-container {
+        width: 85%;
         display: flex;
         flex-direction: column;
         height: 100%;
     }
+
+
+    .cuadros-fechas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*iconos deportes*/
+    .deportes-icono {
+        flex-wrap: wrap;
+        /* Permite que los íconos se envuelvan en varias filas */
+        justify-content: center;
+        /* Centra los íconos en responsive */
+    }
+
+    .deporte {
+        flex: 1 1 30%;
+        /* Ajusta a 30% para que quepan tres íconos por fila */
+        text-align: center;
+        /* Centra el texto debajo de cada ícono */
+        padding: 38px;
+    }
+
+    /*actividades. fotos */
+    .actividades-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actividades-index {
+        width: 90%;
+        /* Ajusta el ancho para que ocupen menos espacio en pantallas pequeñas */
+        max-width: 520px;
+        /* Limita el tamaño máximo si es necesario */
+    }
+
+
+    .actividad-index-voley,
+    .actividad-index-basket,
+    .actividad-index-futbolfem,
+    .actividad-index-escuelita {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        /* Ajusta el padding si es necesario para reducir espacio */
+    }
+
+
+    /*sponsors */
+    .sponsors h3 {
+        color: #F8F8F8;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #000000;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 23px;
+    }
+    
+    .copy {
+        padding: 29px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

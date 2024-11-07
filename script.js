@@ -53,3 +53,12 @@ botonesTalles.forEach(button => {
 });
 
 
+
+// BOTON HAMBURGUESA 
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu-horizontal');
+        menu.classList.toggle('active');
+    }
+</script>
+
