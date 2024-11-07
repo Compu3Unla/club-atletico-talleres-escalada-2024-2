@@ -577,33 +577,28 @@ footer {
     width: 40%;
 }
 
-/* section de backgrounds-images de actividades */
-.actividad-index-voley {
-    background-image: url(grupo1-img/index/noticias/index-noticias-deportes1.jpg);
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 334px;
+.container-actividades {
+    position: relative;
+    /* Hace que los elementos hijos puedan posicionarse en relación a este */
 }
 
-.actividad-index-basket {
-    background-image: url(grupo1-img/index/noticias/index-noticias-deportes2.jpg);
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 334px;
+.container-actividades img {
+    max-width: auto;
 }
 
-.actividad-index-futbolfem {
-    background-image: url(grupo1-img/index/noticias/index-noticias-deportes3.jpg);
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 334px;
+.imagen-actividades {
+    position: absolute;
+    /* Posiciona la imagen en relación a su contenedor */
+    max-width: 200px;
 }
 
-.actividad-index-escuelita {
-    background-image: url(grupo1-img/index/noticias/index-noticias-deportes4.jpg);
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 334px;
+.titulo-actividades {
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    padding: 1em;
+    background-color: #DF0E0D;
+    color: #f8f8f8;
 }
 
 /* Fin Section noticias*/
