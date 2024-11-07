@@ -46,6 +46,10 @@ h4 {
     display: none;
 }
 
+.noticia-responsive img {
+    display: none;
+}
+
 /*index*/
 body {
     font-family: "Bebas Neue";
@@ -1456,6 +1460,7 @@ button:hover {
     h2 {
         font-size: 26px;
     }
+
     .banner-ppal {
         display: block;
         text-align: center;
@@ -1548,19 +1553,77 @@ button:hover {
         height: 100%;
     }
 
-    .actividades-box {
+
+    .cuadros-fechas {
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        height: 100%;
+        align-items: center;
+    }
+
+    /*iconos deportes*/
+    .deportes-icono {
+        flex-wrap: wrap;
+        /* Permite que los íconos se envuelvan en varias filas */
+        justify-content: center;
+        /* Centra los íconos en responsive */
+    }
+
+    .deporte {
+        flex: 1 1 30%;
+        /* Ajusta a 30% para que quepan tres íconos por fila */
+        text-align: center;
+        /* Centra el texto debajo de cada ícono */
+        padding: 38px;
+    }
+
+    /*actividades. fotos */
+    .actividades-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actividades-index {
+        width: 90%;
+        /* Ajusta el ancho para que ocupen menos espacio en pantallas pequeñas */
+        max-width: 520px;
+        /* Limita el tamaño máximo si es necesario */
     }
 
 
-.cuadros-fechas {
+    .actividad-index-voley,
+    .actividad-index-basket,
+    .actividad-index-futbolfem,
+    .actividad-index-escuelita {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        /* Ajusta el padding si es necesario para reducir espacio */
+    }
+
+
+    /*sponsors */
+    .sponsors h3 {
+        color: #F8F8F8;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #000000;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
-    he: 100%;
-}
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 23px;
+    }
+    .copy {
+        padding: 29px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
