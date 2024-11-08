@@ -763,8 +763,7 @@ aside {
 
 .banner-publicitario {
     position: relative;
-    text-align: center;
-    color: #fff;
+    color: #f8f8f8;
 }
 
 .banner-publicitario .compra-online {
@@ -1108,8 +1107,7 @@ aside {
 /******imagen TITULAR******/
 .noticia-padre {
     display: flex;
-    justify-content: center;
-    gap:40px;
+    justify-content: space-evenly;
 }
 
 #titular {
@@ -1133,7 +1131,6 @@ aside {
 #noticia-ppal {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 #noticia-ppal article {
@@ -1169,7 +1166,6 @@ aside {
 
 .card {
     display: flex;
-    width: 100%;
     justify-content: center;
     gap: 2em;
 
@@ -1194,7 +1190,7 @@ aside {
     position: absolute;
     top: 5em;
     left: 4.2em;
-    padding: 0.4em;
+    padding: 0.3em;
     background-color: #DF0E0D;
     color: #f8f8f8;
 }
@@ -1212,7 +1208,6 @@ aside {
 
 .galeria {
     width: 76%;
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1221,7 +1216,7 @@ aside {
 
 .imagen-principal img {
     border: 3px solid #DF0E0D;
-    padding: 0px 17px;
+    padding: 0px 24px;
     margin-bottom: 21px;
 }
 
@@ -1280,14 +1275,6 @@ aside {
     font-weight: 600;
 }
 
-
-.opciones-talles {
-    gap: 20px;
-    font-family: "Work Sans", sans-serif;
-}
-
-
-
 .opciones-talles button {
     padding: 8px;
     border: 2px solid #141414;
@@ -1327,7 +1314,6 @@ aside {
     margin-top: 15px;
     flex-direction: column;
     width: 400px;
-    min-width: 300px;
     padding: 13px 0px;
 }
 
@@ -1398,6 +1384,9 @@ aside {
     }
     .titulo-actividades{
         padding: 0.3em;
+    }
+    .carousel {
+        width: 72%;
     }
 }
 
@@ -1547,9 +1536,6 @@ aside {
     /*iconos deportes*/
     .deportes-icono {
         flex-wrap: wrap;
-        /* Permite que los íconos se envuelvan en varias filas */
-        justify-content: center;
-        /* Centra los íconos en responsive */
     }
 
     .deporte {
@@ -1563,7 +1549,6 @@ aside {
     /*actividades. fotos */
     .actividades-box {
         flex-direction: column;
-        align-items: center;
     }
 
     .actividades-index {
@@ -1596,7 +1581,6 @@ aside {
     }
 
     .sponsors-media {
-        visibility: visible;
         background-color: #BD1414;
         display: flex;
         flex-direction: column;
@@ -1626,9 +1610,6 @@ aside {
     }
 
     footer {
-        background-color: #141414;
-        display: flex;
-        align-items: center;
         padding: 20px;
         flex-direction: column-reverse;
         gap: 10px
