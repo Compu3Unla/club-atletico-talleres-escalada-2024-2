@@ -55,6 +55,7 @@ body {
     font-family: "Bebas Neue";
     background-color: #F8F8F8;
     width: 100%;
+    color: #141414;
 }
 
 .banner-ppal {
@@ -352,6 +353,7 @@ footer {
 
 
 /* BANNER */
+
 .banner-index-socios {
     background-image: url(grupo1-img/index/banner-publicitario-index.gif);
     background-repeat: no-repeat;
@@ -382,7 +384,10 @@ footer {
     padding-top: 30px;
 }
 
-
+.atencion-cliente a 
+{
+    color: #BD1414;
+}
 .boton-acete-socio {
     padding: 90px 50px;
 }
@@ -656,8 +661,14 @@ footer {
 /*SOCIOS*/
 
 
+/*banner socios*/
+
+aside { 
+margin-top: 3em;
+
+}
+
 .h3-socios {
-    font-size: 40px;
     border-bottom: 3px solid #BD1414;
 }
 
@@ -804,19 +815,16 @@ footer {
 .banner-publicitario p {
     font-family: "Bebas Neue";
     text-align: center;
-    font-family: "Bebas Neue";
-    font-size: 55px;
-    font-style: normal;
+    font-size: 45px;
     line-height: normal;
     letter-spacing: 1.1px;
 }
 
 .boton-tienda {
-    padding: 13px 34px;
+    padding: 9px 22px;
     display: inline-block;
     background-color: #141414;
     color: #F8F8F8;
-    text-decoration: none;
     margin-top: 10px;
     font-size: 22px;
 }
@@ -1087,7 +1095,6 @@ footer {
 .tit-historia {
     font-size: 40px;
     letter-spacing: 1.6px;
-    color: #141414;
 }
 
 
@@ -1110,7 +1117,7 @@ footer {
     font-family: "Work Sans";
     font-size: 12px;
     font-weight: 400;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.4px;
     color: #141414;
 }
 
@@ -1127,7 +1134,6 @@ footer {
     font-size: 40px;
     letter-spacing: 1.6px;
     border-bottom: 3px solid #BD1414;
-    color: #141414;
     position: relative;
     max-width: 82%;
     top: 13%;
@@ -1162,7 +1168,7 @@ footer {
 #titular {
     background-image: url(grupo1-img/html-noticias/articulo-titulo.png);
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1207,6 +1213,10 @@ footer {
     font-family: "Work Sans", sans-serif;
 }
 
+.leyenda p {
+font-family: "Work Sans";
+font-size: 15px;
+font-weight: 400;}
 /* OTRAS NOTICIAS */
 #otras-noticias {
     display: flex;
@@ -1280,30 +1290,42 @@ footer {
     padding: 20px;
 }
 
-.camiseta h1 {
-    color: #141414;
+.camiseta h2 {
     margin-bottom: 10px;
 }
 
+.cuotas-precio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.cuota {
+    font-size: 17px;
+    color: #BD1414;
+}
 
 
+.titulos-p p {
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.titulos-p { 
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding-top: 20px;
+}
 
 .precio {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
-.cuotas {
-    margin-bottom: 20px;
-    font-family: "Work Sans", sans-serif;
-}
 
-.talles {
-    padding: 30px 0px;
-    font-size: 18px;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-}
 
 .opciones-talles {
     gap: 20px;
@@ -1314,7 +1336,7 @@ footer {
 
 .opciones-talles button {
     padding: 8px;
-    border: 1px solid #141414;
+    border: 2px solid #141414;
     background-color: #f8f8f8;
     margin: 5px;
     cursor: pointer;
@@ -1332,46 +1354,16 @@ footer {
 }
 
 
-.cantidad {
-    margin-bottom: 20px;
-}
-
-.cantidad p {
-    font-size: 18px;
-    font-family: "Work Sans", sans-serif;
-}
-
-.selector-cantidad {
-    padding-top: 10px;
-}
-
-.selector-cantidad button {
-    padding: 5px;
-    border: 1px solid #DF0E0D;
-    background-color: #f8f8f8;
 
 
 
-}
-
-.selector-cantidad input {
-    width: 40px;
+.unidades input {
+    width: 80px;
     text-align: center;
-    border: 1px solid #DF0E0D;
-    font-family: "Work Sans", sans-serif;
+    border: 2px solid #DF0E0D;
     height: 25px;
 }
 
-
-.metodos-pago {
-    font-size: 18px;
-    font-family: "Work Sans", sans-serif;
-    padding: 13px 0px;
-}
-
-.metodos-pago p {
-    padding: 13px 0px;
-}
 
 
 .iconos {
@@ -1544,6 +1536,10 @@ footer {
     }
 
 
+.galeria-index {
+    display: none;
+}
+
 
     .carousel-item img {
         width: 202px;
@@ -1609,6 +1605,7 @@ footer {
         font-family: "Work Sans";
         font-size: 20px;
         padding: 10px;
+        flex-direction: column;
     }
 
     footer {

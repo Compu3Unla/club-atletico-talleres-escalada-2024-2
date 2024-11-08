@@ -54,3 +54,38 @@ document.addEventListener("DOMContentLoaded", () => {
         const menu = document.querySelector('.menu-horizontal');
         menu.classList.toggle('active');
     }
+
+    // Galería en pantalla completa
+    let galleryIndex = 0; // Renombrado de currentIndex para evitar conflicto
+    const images = document.querySelectorAll('.gallery img');
+
+    function openFullscreen(img) {
+        const fullscreen = document.getElementById('fullscreenContainer');
+        fullscreen.style.display = 'block';
+        document.getElementById('fullscreenImage').src = img.src;
+        galleryIndex = Array.from(images).indexOf(img);
+    }
+
+    function closeFullscreen() {
+        document.getElementById('fullscreenContainer').style.display = 'none';
+    }
+
+    function showPrev() {
+        galleryIndex = (galleryIndex - 1 + images.length) % images.length;
+        document.getElementById('fullscreenImage').src = images[galleryIndex].src;
+    }
+
+    function showNext() {
+        galleryIndex = (galleryIndex + 1) % images.length;
+        document.getElementById('fullscreenImage').src = images[galleryIndex].src;
+    }
+
+    // Exponer funciones para usarlas en el HTML
+    window.moveSlide = moveSlide;
+    window.togglePasswordVisibility = togglePasswordVisibility;
+    window.toggleMenu = toggleMenu;
+    window.openFullscreen = openFullscreen;
+    window.closeFullscreen = closeFullscreen;
+    window.showPrev = showPrev;
+    window.showNext = showNext;
+});
