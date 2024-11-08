@@ -612,7 +612,7 @@ footer {
     position: absolute;
     top: 1em;
     left: 0em;
-    padding: 1em;
+    padding: 0.5em;
     background-color: #DF0E0D;
     color: #f8f8f8;
 }
@@ -1363,6 +1363,7 @@ aside {
 .opciones-talles {
     gap: 20px;
     font-family: "Work Sans", sans-serif;
+}
 
 
 .opciones-talles button {
@@ -1520,12 +1521,12 @@ aside {
 
     .menu-horizontal-responsive h2 {
         display: block;
-        font-size: 28px;
+        font-size: 35px;
         margin: 0;
         color: #f8f8f8;
         position: absolute;
         top: 39px;
-        right: 87PX;
+        right: 65px;
     }
 
 
@@ -1547,8 +1548,7 @@ aside {
 
     /* *******************Estilos responsive para menú hamburguesa *****************/
     .hamburger {
-        display: none;
-        font-size: 30px;
+        font-size: 33px;
         color: #F8F8F8;
         cursor: pointer;
         padding: 35px;
@@ -1574,7 +1574,11 @@ aside {
     }
 
 
-
+    .banner-index-socios {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     /* *******************Estilos responsive para menú hamburguesa *****************/
 
@@ -1676,17 +1680,6 @@ aside {
     align-items: center;
 }
 
-    /*sponsors */
-
-    /*.sponsors h3 {
-        color: #F8F8F8;
-        text-align: center;
-        font-family: "Work Sans";
-        font-size: 20px;
-        padding: 10px;
-        flex-direction: column;
-    }*/
-
     /* Estilos para el responsive de sponsors*/
     .sponsors {
         display: none;
@@ -1712,7 +1705,7 @@ aside {
 
     .sponsors-media li {
         display: flex;
-        gap: 2em;
+        gap: 4em;
     }
 
     .sponsors-media h3 {
@@ -1726,16 +1719,22 @@ aside {
         background-color: #141414;
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
-        flex-direction: column;
-        gap: 23px;
+        padding: 20px;
+        flex-direction: column-reverse;
+        gap: 10px
     }
 
+
+    .redes h5 {
+        font-size: 20px;
+    }
+
+    }
     .copy {
-        padding: 29px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 22px
     }
 
 
