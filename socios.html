@@ -97,7 +97,6 @@
                     <button class="asociarse" id="asociate-bttn" onclick="openModal(1)">Quiero Asociarme</button>
                 </div>
             </section>
-
             <!-- Sección de Información -->
             <section class="informacion">
                 <h3 class="h3-socios">¿Qué tipo de socio soy?</h3>
@@ -116,8 +115,6 @@
                     activos.
                 </p>
             </section>
-
-
             <!-- Sección de Atención al Cliente -->
             <section class="atencion-cliente">
                 <h3 class="h3-socios">Atención al Cliente</h3>
@@ -125,25 +122,16 @@
                 <p>Escribí a: <a href="mailto:administracion@talleres.org.ar">administracion@talleres.org.ar</a></p>
             </section>
         </main>
-
-
         <!-- Banner Publicitario -->
         <aside class="banner-publicitario">
             <div class="compra-online">
                 <p>Lleva el color Albirrojo</p>
                 <a href="merch.html" class="boton-tienda" target="_blank">Compra Online</a>
             </div>
-
-
             <img src="grupo1-img/html-socios-form/banner-socios.gif" width="" height=""
-
                 alt="Jugador con camiseta del club">
         </aside>
     </div>
-
-
-
-
     <!-- Modal 1 -->
     <div id="modal1" class="modal">
         <div class="modal-content">
@@ -156,22 +144,16 @@
                 <input type="text" placeholder="Apellido" required>
                 <input type="text" placeholder="DNI" required>
                 <input type="date" placeholder="Fecha de nacimiento" required>
-
-
                 <select id="sexo" name="sexo" required>
                     <option value="" disabled selected>Sexo</option>
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                     <option value="otro">Otro</option>
                 </select>
-
-
                 <button type="button" onclick="nextModal(1, 2)">Siguiente</button>
             </form>
         </div>
     </div>
-
-
     <!-- Modal 2 -->
     <div id="modal2" class="modal">
         <div class="modal-content">
@@ -181,27 +163,15 @@
             <form>
                 <!-- Formulario 2 -->
                 <input type="text" placeholder="País" required>
-
-
                 <input type="text" placeholder="Provincia" required>
-
-
                 <input type="text" placeholder="Localidad" required>
-
-
                 <input type="text" placeholder="Dirección" required>
-
-
                 <input type="tel" placeholder="Teléfono">
-
-
                 <button type="button" onclick="previousModal(2, 1)">Atrás</button>
                 <button type="button" onclick="nextModal(2, 3)">Siguiente</button>
             </form>
         </div>
     </div>
-
-
     <!-- Modal 3 -->
     <div id="modal3" class="modal">
         <div class="modal-content">
@@ -228,7 +198,6 @@
                     <option value="Transferencia Bancaria">Transferencia Bancaria</option>
                 </select>
                 <input type="text" placeholder="Correo eléctronico" required>
-
                 <!-- Campo de Contraseña -->
                 <div class="password-container">
                     <input type="password" id="password" placeholder="Contraseña" required>
@@ -236,7 +205,6 @@
                         <img src="grupo1-img/html-socios-form/visibility.svg">
                     </span>
                 </div>
-
                 <!-- Campo de Repetir Contraseña -->
                 <div class="password-container">
                     <input type="password" id="confirmPassword" placeholder="Repetir contraseña" required>
@@ -244,12 +212,9 @@
                         <img src="grupo1-img/html-socios-form/visibility.svg">
                     </span>
                 </div>
-
-
                 <button type="button" onclick="previousModal(3, 2)">Atrás</button>
                 <button type="button" onclick="nextModal(3, 4)">Siguiente</button>
             </form>
-
             <script>
                 // Función para mostrar/ocultar las contraseñas
                 function togglePasswordVisibility() {
@@ -268,8 +233,6 @@
             </script>
         </div>
     </div>
-
-
     <!-- Modal 4 -->
     <div id="modal4" class="modal">
         <div class="modal-content">
@@ -278,7 +241,6 @@
             <span class="loader"></span>
         </div>
     </div>
-
     <!-- Modal 5 -->
     <div id="modal5" class="modal">
         <div class="modal-content">
@@ -291,8 +253,6 @@
             </hgroup>
         </div>
     </div>
-
-
     <footer>
         <div class="copy">
             <h6>prensa@talleres.org.ar</h6>
@@ -308,8 +268,6 @@
                     src="grupo1-img/index/redes/logo-facebook.png" alt="logo facebook" width="13" height="25"></a>
         </div>
     </footer>
-
-
     <script>
         // Función para abrir el modal específico
         function openModal(modalNumber) {

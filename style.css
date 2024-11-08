@@ -19,7 +19,6 @@
 /* TAMAÑO TIPOGRAFIA- TODOS LOS H1 H2 H3 H4 H5 H6*/
 h1 {
     color: #F8F8F8;
-    font-weight: 400;
     font-size: 40px;
     letter-spacing: 1.2px;
 }
@@ -67,14 +66,12 @@ body {
 .banner-ppal {
     background-image: url(grupo1-img/index/banner-header.jpg);
     padding: 20px;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .noticias-principales {
-    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -82,9 +79,6 @@ body {
 .noticias-principales ul {
     display: flex;
     animation: slide 12s linear infinite;
-    /* Ajusta la duración según prefieras */
-    width: 100%;
-    /* Ajusta para mostrar todas las imágenes duplicadas */
     margin: 0;
     padding: 0;
 }
@@ -123,7 +117,6 @@ body {
 
 nav {
     background-color: #141414;
-    padding: 15px, 99px;
 }
 
 
@@ -249,7 +242,6 @@ footer {
 
 .cuadros-fechas {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -312,11 +304,10 @@ footer {
 
 .link {
     color: #BD1414;
-    border-bottom: 1px solid var(--Rojo-Bastn, #DF0E0D);
+    border-bottom: 1px solid #DF0E0D;
     font-size: 20px;
     font-family: "work sans";
     font-variant: small-caps;
-    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -403,9 +394,7 @@ footer {
 .leyenda-banner-index {
     display: flex;
     gap: 3em;
-    font-family: "Bebas Neue";
     justify-content: center;
-    align-items: center;
     color: #F8F8F8;
     background-color: #141414;
     padding: 20px 0px;
@@ -418,9 +407,6 @@ footer {
 /*SECTION MERCH INDEX */
 /***********************************************aca empieza merch-carrousel ***********************************:)*/
 
-.galeria-index {
-    padding-top: 30px 0px;
-}
 
 .inicio-carousel h2 {
     text-align: center;
@@ -433,7 +419,6 @@ footer {
 
 .carousel-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     position: relative;
     padding: 95px 0px;
@@ -544,10 +529,6 @@ footer {
 }
 
 .deportes {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
     padding: 20px 0;
 }
 
@@ -686,11 +667,7 @@ aside {
 
 
 .socios-main {
-    display: flex;
     max-width: 1000px;
-    flex-direction: column;
-    gap: 31px;
-    flex: 1 0 0;
     margin: 50px;
 }
 
@@ -698,8 +675,6 @@ aside {
 .precios {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: normal;
     gap: 28px;
     padding: 50px;
 }
@@ -760,16 +735,13 @@ aside {
 
 .informacion,
 .atencion-cliente {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 50px;
 }
 
 .informacion p,
 .atencion-cliente p {
     margin-top: 15px;
-    font-family: "Work Sans";
-    font-size: 24px;
-    line-height: 29px;
 }
 
 .informacion p strong {
@@ -782,22 +754,14 @@ aside {
 
 .contenedor-principal {
     display: flex;
-    gap: 80px;
-    margin: 0 auto;
     justify-content: space-around;
 }
 
-.socios-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-}
+
 
 /************Estilos del Banner Publicitario en socios *****************/
 
 .banner-publicitario {
-    width: 300px;
     position: relative;
     text-align: center;
     color: #fff;
@@ -810,10 +774,7 @@ aside {
     left: 50%;
     transform: translateX(-50%);
     /* Centra horizontalmente */
-    z-index: 1;
     padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
 }
 
 .banner-publicitario p {
@@ -837,10 +798,6 @@ aside {
     color: #DF0E0D;
 }
 
-.banner-publicitario img {
-    width: 100%;
-}
-
 
 /* *****Estilos básicos para el modal *****/
 .modal {
@@ -859,7 +816,7 @@ aside {
 .modal-content {
     background-color: #F8F8F8;
     padding: 40px 40px;
-    width: 100vh;
+    width: 100%;
     max-width: 392px;
     position: relative;
     text-align: center;
@@ -1000,10 +957,8 @@ aside {
 /*section 1 historia*/
 
 .historia {
-    height: 92vh;
+    height: 92vh; /*tamaño de la pantalla inicial de historia*/
 }
-
-
 
 .video-contenedor {
     background-color: #BD1414;
@@ -1027,7 +982,6 @@ aside {
     background-color: #F8F8F8;
     width: 500px;
     padding: 12px 50px;
-    z-index: 10;
     /* para que este arriba del video */
 }
 
@@ -1035,11 +989,9 @@ aside {
     display: flex;
     justify-content: space-evenly;
     background-color: #141414;
-    width: 100%;
     padding: 45px 0px 49px 0px;
     position: relative;
     bottom: 108px;
-    z-index: 15;
 }
 
 .fechas a {
@@ -1105,7 +1057,6 @@ aside {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    padding: 20px;
 }
 
 #foto-historia {
@@ -1124,7 +1075,6 @@ aside {
 
 
 .tit-historia {
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -1132,8 +1082,6 @@ aside {
 
 .historia1906 h3 {
     width: 100%;
-    font-size: 40px;
-    letter-spacing: 1.6px;
     border-bottom: 3px solid #BD1414;
     position: relative;
     max-width: 82%;
@@ -1166,17 +1114,18 @@ aside {
 
 #titular {
     background-image: url(grupo1-img/html-noticias/articulo-titulo.png);
-    background-repeat: no-repeat;
     height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
 }
 
 #titular h2 {
     color: #F8F8F8;
     background-color: #BD1414;
     padding: 0.3em;
+    text-align: center;
 }
 
 
