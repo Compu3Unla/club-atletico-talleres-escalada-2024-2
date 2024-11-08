@@ -1596,7 +1596,12 @@ font-weight: 400;}
         padding: 10px;
         /* Ajusta el padding si es necesario para reducir espacio */
     }
-
+    
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
     /*sponsors */
     .sponsors h3 {
