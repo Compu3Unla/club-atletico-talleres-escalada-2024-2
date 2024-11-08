@@ -1360,6 +1360,7 @@ aside {
 .opciones-talles {
     gap: 20px;
     font-family: "Work Sans", sans-serif;
+}
 
 
 .opciones-talles button {
@@ -1672,18 +1673,6 @@ aside {
     flex-direction: column;
     align-items: center;
 }
-
-    /*sponsors */
-
-    /*.sponsors h3 {
-        color: #F8F8F8;
-        text-align: center;
-        font-family: "Work Sans";
-        font-size: 20px;
-        padding: 10px;
-        flex-direction: column;
-    }*/
-
     /* Estilos para el responsive de sponsors*/
     .sponsors {
         display: none;
@@ -1734,7 +1723,4 @@ aside {
         flex-direction: column;
         align-items: center;
     }
-
-
-
 }
