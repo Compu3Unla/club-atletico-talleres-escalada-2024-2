@@ -38,6 +38,12 @@ h4 {
     letter-spacing: 1.28px;
 }
 
+p{
+    font-family: "Work Sans";
+    font-size: 24px;
+    line-height: 30px;
+}
+
 .hamburger {
     display: none;
 }
@@ -581,7 +587,6 @@ footer {
 
 .container-actividades {
     position: relative;
-    /* Hace que los elementos hijos puedan posicionarse en relación a este */
 }
 
 .container-actividades img {
@@ -591,7 +596,6 @@ footer {
 
 .imagen-actividades {
     position: absolute;
-    /* Posiciona la imagen en relación a su contenedor */
     max-width: 200px;
 }
 
@@ -637,11 +641,6 @@ footer {
     transform: scale(1.1);
     /* Zoom del 10% */
 }
-
-
-
-
-
 
 .sponsors h3 {
     text-align: center;
@@ -727,12 +726,9 @@ margin-top: 3em;
     padding: 24px;
     justify-content: center;
     display: flex;
-
     width: 886px;
-
     width: 100%;
     align-items: flex-start;
-
     color: #F8F8F8;
     background-color: #141414;
     font-family: "Bebas Neue";
@@ -1144,9 +1140,6 @@ margin-top: 3em;
 
 
 .historia-2 p {
-    font-family: "Work Sans";
-    font-size: 24px;
-    line-height: 29px;
     max-width: 750px;
 }
 
@@ -1218,14 +1211,41 @@ font-family: "Work Sans";
 font-size: 15px;
 font-weight: 400;}
 /* OTRAS NOTICIAS */
-#otras-noticias {
-    display: flex;
-    gap: 2em;
-    justify-content: center;
+
+#otras-noticias{
     padding: 3em;
 }
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+    
+}
 
+.content{
+    position: relative;
+}
 
+.container-noticias-img {
+    max-width: auto;
+    width: 100%;
+}
+
+.imagen-noticias{
+    max-width: 300px;
+}
+
+.titular {
+    position: absolute;
+    top: 4em;
+    left: 4.2em;
+    padding: 0.4em;
+    background-color: #DF0E0D;
+    color: #f8f8f8;
+}
+
+/*
 .card {
     display: flex;
     flex-direction: column;
@@ -1267,7 +1287,7 @@ font-weight: 400;}
 }
 
 .imagen-principal img {
-    border: 1px solid #DF0E0D;
+    border: 3px solid #DF0E0D;
     padding: 0px 17px;
     margin-bottom: 21px;
 
@@ -1281,7 +1301,7 @@ font-weight: 400;}
 
 .miniaturas img {
     width: 30%;
-    border: 1px solid #DF0E0D;
+    border: 3px solid #DF0E0D;
 
 }
 
@@ -1422,6 +1442,14 @@ font-weight: 400;}
 
 
 /*******comienzo responsive***************************/
+@media screen and (max-width:1366px) {
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}    
+}
+
 
 @media screen and (max-width: 600px) {
 
