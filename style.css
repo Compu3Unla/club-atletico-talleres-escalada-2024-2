@@ -1221,11 +1221,16 @@ aside {
     padding: 3em;
 }
 
+
+
+/*FIN NOTICIAS*/
+
 .card {
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 2em;
+
 
 }
 
@@ -1233,6 +1238,8 @@ aside {
     position: relative;
 }
 
+
+/**MERCH*******************************************************************
 .container-noticias-img {
     max-width: auto;
     width: 100%;
@@ -1240,6 +1247,7 @@ aside {
 
 .imagen-noticias {
     max-width: 300px;
+
 }
 
 .titular {
@@ -1251,11 +1259,13 @@ aside {
     color: #f8f8f8;
 }
 
+
 /*FIN NOTICIAS*/
 
 /*********************************MERCH**********************************************************************************************************/
 
 .merch {
+
     display: flex;
     height: 100vh;
     align-items: center;
@@ -1263,15 +1273,18 @@ aside {
 
 .galeria {
     width: 76%;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    padding: 30px;
 }
 
 .imagen-principal img {
     border: 3px solid #DF0E0D;
     padding: 0px 17px;
     margin-bottom: 21px;
+
 
 }
 
@@ -1283,11 +1296,13 @@ aside {
 
 .miniaturas img {
     width: 30%;
-    border: 3px solid #DF0E0D;
+  border: 3px solid #DF0E0D;}
 
-}
+
+
 
 .info-camiseta {
+
     width: 55%;
     padding: 20px;
 }
@@ -1296,16 +1311,19 @@ aside {
     margin-bottom: 10px;
 }
 
+
 .cuotas-precio {
     display: flex;
     flex-direction: column;
     gap: 0.2em;
+
 }
 
 .cuota {
     font-size: 17px;
     color: #BD1414;
 }
+
 
 
 .titulos-p p {
@@ -1338,6 +1356,7 @@ aside {
 
 .opciones-talles button {
     padding: 8px;
+
     border: 2px solid #141414;
     background-color: #f8f8f8;
     margin: 5px;
@@ -1347,6 +1366,7 @@ aside {
 .opciones-talles button:hover {
     background-color: #141414;
     color: #f8f8f8;
+
 }
 
 /* Estilo para el botón seleccionado */
@@ -1375,6 +1395,8 @@ aside {
 }
 
 
+
+
 .botones {
     display: flex;
     gap: 10px;
@@ -1384,6 +1406,7 @@ aside {
     min-width: 300px;
     padding: 13px 0px;
 }
+
 
 .agregar-carrito,
 .comprar {
@@ -1410,6 +1433,7 @@ aside {
     background-color: #141414;
     color: #f8f8f8;
     font-family: "Bebas Neue";
+
 
 }
 
