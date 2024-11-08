@@ -38,6 +38,12 @@ h4 {
     letter-spacing: 1.28px;
 }
 
+p{
+    font-family: "Work Sans";
+    font-size: 24px;
+    line-height: 30px;
+}
+
 .hamburger {
     display: none;
 }
@@ -1128,9 +1134,6 @@ footer {
 
 
 .historia-2 p {
-    font-family: "Work Sans";
-    font-size: 24px;
-    line-height: 29px;
     max-width: 750px;
 }
 
@@ -1274,7 +1277,7 @@ footer {
 }
 
 .imagen-principal img {
-    border: 1px solid #DF0E0D;
+    border: 3px solid #DF0E0D;
     padding: 0px 17px;
     margin-bottom: 21px;
 
@@ -1288,7 +1291,7 @@ footer {
 
 .miniaturas img {
     width: 30%;
-    border: 1px solid #DF0E0D;
+    border: 3px solid #DF0E0D;
 
 }
 
