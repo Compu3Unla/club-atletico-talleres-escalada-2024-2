@@ -1166,7 +1166,6 @@ aside {
     display: flex;
     justify-content: center;
     gap:40px;
-
 }
 
 #titular {
@@ -1358,17 +1357,13 @@ aside {
 }
 
 
-
 .opciones-talles {
     gap: 20px;
     font-family: "Work Sans", sans-serif;
-}
-
 
 
 .opciones-talles button {
     padding: 8px;
-
     border: 2px solid #141414;
     background-color: #f8f8f8;
     margin: 5px;
