@@ -23,6 +23,9 @@ Trabajamos para resoluciones de pantalla de:
 
 El HTML que responde al formato móvil es: index.html.
 
+
+
+
 Capturas de pantalla del trabajo:
 HTML- historia
 
