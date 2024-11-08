@@ -576,7 +576,6 @@ footer {
 
 .container-actividades {
     position: relative;
-    /* Hace que los elementos hijos puedan posicionarse en relación a este */
 }
 
 .container-actividades img {
@@ -586,7 +585,6 @@ footer {
 
 .imagen-actividades {
     position: absolute;
-    /* Posiciona la imagen en relación a su contenedor */
     max-width: 200px;
 }
 
@@ -632,11 +630,6 @@ footer {
     transform: scale(1.1);
     /* Zoom del 10% */
 }
-
-
-
-
-
 
 .sponsors h3 {
     text-align: center;
@@ -716,12 +709,9 @@ footer {
     padding: 24px;
     justify-content: center;
     display: flex;
-
     width: 886px;
-
     width: 100%;
     align-items: flex-start;
-
     color: #F8F8F8;
     background-color: #141414;
     font-family: "Bebas Neue";
@@ -1208,14 +1198,41 @@ footer {
 }
 
 /* OTRAS NOTICIAS */
-#otras-noticias {
-    display: flex;
-    gap: 2em;
-    justify-content: center;
+
+#otras-noticias{
     padding: 3em;
 }
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+    
+}
 
+.content{
+    position: relative;
+}
 
+.container-noticias-img {
+    max-width: auto;
+    width: 100%;
+}
+
+.imagen-noticias{
+    max-width: 300px;
+}
+
+.titular {
+    position: absolute;
+    top: 4em;
+    left: 4.2em;
+    padding: 0.4em;
+    background-color: #DF0E0D;
+    color: #f8f8f8;
+}
+
+/*
 .card {
     display: flex;
     flex-direction: column;
@@ -1429,6 +1446,14 @@ footer {
 
 
 /*******comienzo responsive***************************/
+@media screen and (max-width:1366px) {
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}    
+}
+
 
 @media screen and (max-width: 600px) {
 
