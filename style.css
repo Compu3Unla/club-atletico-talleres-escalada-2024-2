@@ -38,7 +38,7 @@ h4 {
     letter-spacing: 1.28px;
 }
 
-p{
+p {
     font-family: "Work Sans";
     font-size: 24px;
     line-height: 30px;
@@ -294,7 +294,6 @@ footer {
 
 
 .teams img {
-    width: 40px;
     height: auto;
 }
 
@@ -390,15 +389,15 @@ footer {
     padding-top: 30px;
 }
 
-.atencion-cliente a 
-{
+.atencion-cliente a {
     color: #BD1414;
 }
+
 .boton-acete-socio {
     padding: 90px 50px;
 }
 
-.leyenda-index {
+.leyenda-banner-index {
     display: flex;
     gap: 3em;
     font-family: "Bebas Neue";
@@ -566,9 +565,15 @@ footer {
 /*Section noticias DEL CLUB*/
 .actividades-box {
     display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
-    gap: 20px;
+    justify-content: center;
+    padding: 2em;
+    gap: 3em;
+}
+
+.actividades-box li{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 .actividades-index {
@@ -623,9 +628,12 @@ footer {
     gap: 60px;
     justify-content: center;
     align-items: center;
-    display: flex;
     padding: 35px 0px;
     /* Transiciones suaves */
+}
+
+.sponsors-media {
+    display:none;
 }
 
 .sponsors li img {
@@ -662,8 +670,8 @@ footer {
 
 /*banner socios*/
 
-aside { 
-margin-top: 3em;
+aside {
+    margin-top: 3em;
 
 }
 
@@ -1155,7 +1163,8 @@ margin-top: 3em;
 /* imagen TITULAR */
 .noticia-padre {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+
 }
 
 #titular {
@@ -1177,6 +1186,7 @@ margin-top: 3em;
 /* NOTICIA PRINCIPAL */
 #noticia-ppal {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -1199,31 +1209,27 @@ margin-top: 3em;
     border-bottom: 3px solid #BD1414;
 }
 
-
-.leyenda {
-    border: none;
-    font-size: 1em;
+.leyenda p {
     font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
-.leyenda p {
-font-family: "Work Sans";
-font-size: 15px;
-font-weight: 400;}
 /* OTRAS NOTICIAS */
 
-#otras-noticias{
+#otras-noticias {
     padding: 3em;
 }
+
 .card {
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 2em;
-    
+
 }
 
-.content{
+.content {
     position: relative;
 }
 
@@ -1232,7 +1238,7 @@ font-weight: 400;}
     width: 100%;
 }
 
-.imagen-noticias{
+.imagen-noticias {
     max-width: 300px;
 }
 
@@ -1243,30 +1249,6 @@ font-weight: 400;}
     padding: 0.4em;
     background-color: #DF0E0D;
     color: #f8f8f8;
-}
-
-/*
-.card {
-    display: flex;
-    flex-direction: column;
-    max-width: 20em;
-    padding: 1em;
-    gap: 1em;
-    align-items: center;
-    justify-content: space-between;
-    color: #F8F8F8;
-    border: 0.5em solid #BD1414;
-    background-image: url(grupo1-img/html-noticias/articulo-noticia.jpeg);
-    background-repeat: no-repeat;
-}
-
-
-.click-card button {
-    font-size: 12px;
-    padding: 10px;
-    color: #F8F8F8;
-    border: none;
-    background-color: #DF0E0D;
 }
 
 /*FIN NOTICIAS*/
@@ -1332,10 +1314,10 @@ font-weight: 400;}
     font-weight: 600;
 }
 
-.titulos-p { 
+.titulos-p {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     padding-top: 20px;
 }
 
@@ -1443,15 +1425,44 @@ font-weight: 400;}
 
 /*******comienzo responsive***************************/
 @media screen and (max-width:1366px) {
-h1{}
-h2{}
-h3{}
-h4{}
-h5{}    
+    
+    p{
+        font-size: 15px;
+    }
+    .leyenda p{
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .menu-horizontal li a{
+        font-size: 24px;
+    }
+
+    .menu-vertical li a{
+        font-size: 18px;
+    }
+    .banner-index-socios a{
+        font-size: 70px;
+    }
+    .banner-index-socios p{
+        font-size: 24px;
+    }
+    .titulo-actividades{
+        padding: 0.3em;
+    }
 }
 
 
+
 @media screen and (max-width: 600px) {
+
+    aside{
+        display: none;
+    }
 
     h2 {
         font-size: 26px;
@@ -1564,9 +1575,9 @@ h5{}
     }
 
 
-.galeria-index {
-    display: none;
-}
+    .galeria-index {
+        display: none;
+    }
 
 
     .carousel-item img {
@@ -1632,13 +1643,49 @@ h5{}
 }
 
     /*sponsors */
-    .sponsors h3 {
+
+    /*.sponsors h3 {
         color: #F8F8F8;
         text-align: center;
         font-family: "Work Sans";
         font-size: 20px;
         padding: 10px;
         flex-direction: column;
+    }*/
+
+    /* Estilos para el responsive de sponsors*/
+    .sponsors {
+        display: none;
+    }
+
+    .sponsors-media {
+        visibility: visible;
+        background-color: #BD1414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsors-media ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 0px;
+        /* Transiciones suaves */
+    }
+
+    .sponsors-media li {
+        display: flex;
+        gap: 2em;
+    }
+
+    .sponsors-media h3 {
+        text-align: center;
+        font-family: "Work Sans";
+        color: #F8F8F8;
+        padding: 30px 0px;
     }
 
     footer {
