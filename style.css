@@ -43,7 +43,7 @@ p {
     font-size: 24px;
     line-height: 30px;
 }
-
+/*cositas del responsive */
 .hamburger {
     display: none;
 }
@@ -530,7 +530,7 @@ footer {
 
 
 
-/*SECTION deportes */
+/**********************SECTION deportes***************/
 .nombre {
     background-color: #141414;
     color: #ffffff;
@@ -566,7 +566,7 @@ footer {
     color: #141414;
 }
 
-/*Section noticias DEL CLUB*/
+/****************Section noticias DEL CLUB****************/
 .actividades-box {
     display: flex;
     justify-content: center;
@@ -661,7 +661,7 @@ footer {
     padding: 30px 0px;
 }
 
-/**************************FIN SPONSORS*********************************/
+/**************************FIN SPONSORS*************************/
 
 
 
@@ -750,14 +750,13 @@ aside {
 }
 
 
-/*****mi, nose si era que tenias que sacarlo o ponerle color a la tipo, pero aca esta el hover******/
 .asociarse:hover {
     background-color: #BD1414;
     color: #F8F8F8;
 }
 
 
-/* section info*/
+/****section info******/
 
 .informacion,
 .atencion-cliente {
@@ -784,21 +783,18 @@ aside {
 .contenedor-principal {
     display: flex;
     gap: 80px;
-    /* Espacio entre el main y el aside */
     margin: 0 auto;
-    /* Centra el contenedor en la página */
     justify-content: space-around;
 }
 
 .socios-main {
     flex: 1;
-    /* Ocupa el espacio restante */
     display: flex;
     flex-direction: column;
     gap: 31px;
 }
 
-/* Estilos del Banner Publicitario en socios */
+/************Estilos del Banner Publicitario en socios *****************/
 
 .banner-publicitario {
     width: 300px;
@@ -846,7 +842,7 @@ aside {
 }
 
 
-/* Estilos básicos para el modal */
+/* *****Estilos básicos para el modal *****/
 .modal {
     font-family: "work sans";
     display: none;
@@ -884,7 +880,6 @@ aside {
 
 .modal-content h2 {
     color: #BD1414;
-    /* Rojo Talleres */
     font-size: 1.8em;
     margin-bottom: 10px;
 }
@@ -1012,7 +1007,6 @@ aside {
 
 .video-contenedor {
     background-color: #BD1414;
-    /* Fondo rojo */
     display: flex;
     justify-content: center;
     z-index: 5;
@@ -1021,7 +1015,6 @@ aside {
 
 .video-contenedor video {
     height: 100%;
-    /* Ajusta el ancho del video según prefieras */
     /* Máximo ancho del video */
 }
 
@@ -1083,7 +1076,7 @@ aside {
 
 
 
-/* section 2 historia*/
+/******* section 2 historia********/
 
 
 .historia1906 {
@@ -1159,12 +1152,12 @@ aside {
     z-index: 20;
 }
 
-/*FIN HISTORIA*/
+/********FIN HISTORIA******/
 
 
-/*NOTICIAS*/
+/*************************************NOTICIAS*****************/
 
-/* imagen TITULAR */
+/******imagen TITULAR******/
 .noticia-padre {
     display: flex;
     justify-content: center;
@@ -1206,7 +1199,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-family: "Work Sans", sans-serif;
 }
 
 #noticia-ppal article h3 {
@@ -1214,12 +1206,11 @@ aside {
 }
 
 .leyenda p {
-    font-family: "Work Sans", sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 
-/**************** OTRAS NOTICIAS**********************/
+/*************************OTRAS NOTICIAS**********************/
 
 
 
@@ -1283,8 +1274,6 @@ aside {
     border: 3px solid #DF0E0D;
     padding: 0px 17px;
     margin-bottom: 21px;
-
-
 }
 
 
@@ -1297,9 +1286,6 @@ aside {
     width: 30%;
     border: 3px solid #DF0E0D;
 }
-
-
-
 
 .info-camiseta {
 
@@ -1350,7 +1336,7 @@ aside {
     gap: 20px;
     font-family: "Work Sans", sans-serif;
 }
-}
+
 
 
 .opciones-talles button {
@@ -1373,10 +1359,6 @@ aside {
     color: #f8f8f8;
 }
 
-
-
-
-
 .unidades input {
     width: 80px;
     text-align: center;
@@ -1384,16 +1366,11 @@ aside {
     height: 25px;
 }
 
-
-
 .iconos {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-
-
-
 
 .botones {
     display: flex;
@@ -1404,7 +1381,6 @@ aside {
     min-width: 300px;
     padding: 13px 0px;
 }
-
 
 .agregar-carrito,
 .comprar {
@@ -1431,8 +1407,6 @@ aside {
     background-color: #141414;
     color: #f8f8f8;
     font-family: "Bebas Neue";
-
-
 }
 
 .comprar:hover {
@@ -1667,17 +1641,6 @@ aside {
     align-items: center;
 }
 
-    /*sponsors */
-
-    /*.sponsors h3 {
-        color: #F8F8F8;
-        text-align: center;
-        font-family: "Work Sans";
-        font-size: 20px;
-        padding: 10px;
-        flex-direction: column;
-    }*/
-
     /* Estilos para el responsive de sponsors*/
     .sponsors {
         display: none;
@@ -1722,7 +1685,11 @@ aside {
         gap: 10px
     }
 
-
+    .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     .redes h5 {
         font-size: 20px;
     }
