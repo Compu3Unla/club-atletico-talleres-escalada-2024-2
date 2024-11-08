@@ -560,6 +560,7 @@ footer {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
     font-variant: small-caps;
+    color: #141414;
 }
 
 /*Section noticias DEL CLUB*/
@@ -1164,6 +1165,7 @@ aside {
 .noticia-padre {
     display: flex;
     justify-content: center;
+    gap:40px;
 
 }
 
@@ -1215,15 +1217,13 @@ aside {
     font-weight: 400;
 }
 
-/* OTRAS NOTICIAS */
+/**************** OTRAS NOTICIAS**********************/
+
+
 
 #otras-noticias {
     padding: 3em;
 }
-
-
-
-/*FIN NOTICIAS*/
 
 .card {
     display: flex;
@@ -1231,15 +1231,12 @@ aside {
     justify-content: center;
     gap: 2em;
 
-
 }
 
 .content {
     position: relative;
 }
 
-
-/**MERCH*******************************************************************
 .container-noticias-img {
     max-width: auto;
     width: 100%;
@@ -1247,7 +1244,6 @@ aside {
 
 .imagen-noticias {
     max-width: 300px;
-
 }
 
 .titular {
@@ -1258,6 +1254,21 @@ aside {
     background-color: #DF0E0D;
     color: #f8f8f8;
 }
+
+
+/*FIN NOTICIAS*/
+
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+}
+
+.content {
+    position: relative;
+}
+
 
 
 /*FIN NOTICIAS*/
@@ -1296,7 +1307,8 @@ aside {
 
 .miniaturas img {
     width: 30%;
-  border: 3px solid #DF0E0D;}
+    border: 3px solid #DF0E0D;
+}
 
 
 
@@ -1659,7 +1671,12 @@ aside {
         padding: 10px;
         /* Ajusta el padding si es necesario para reducir espacio */
     }
-
+    
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
     /*sponsors */
 
