@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>principal</title>
+    <link rel="icon" href="grupo1-img/favicon-1.ico" type="image/x-icon">
+    <title>Club Atlético Talleres de Remedios de Escalada</title>
 </head>
 
 <body>
@@ -17,6 +18,10 @@
                     width="50px" height="50px"></a>
         </div>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu-horizontal-responsive">
+                <h2>CLUB ATLÉTICO TALLERES DE ESCALADA</h2>
+            </div>
             <ul class="menu-horizontal">
                 <li><a href="#">El club</a>
                     <ul class="menu-vertical">
@@ -27,7 +32,7 @@
                 </li>
                 <li><a href="#">Socios</a>
                     <ul class="menu-vertical">
-                        <li><a href="socios.html">cuotas</a></li>
+                        <li><a href="socios.html">Cuotas</a></li>
                         <li><a href="#">Hacete Socio</a></li>
                         <li><a href="#">Entradas</a></li>
                     </ul>
@@ -58,38 +63,116 @@
 
     </header>
     <main>
-        <section class="noticias"> <!-- Aplicar JAVa o css para la animacion, creo que se puede en css-->
-            <div>
+        <section class="noticias">
+            <div class="noticias-principales">
                 <ul>
                     <li><a href="noticias.html" target="_blank"><img
-                                src="grupo1-img/index/noticias/inicio-noticia-ppal-grande.jpg" alt="lupa" width="100%"
+                                src="grupo1-img/index/noticias/inicio-noticia-ppal-grande.jpg" alt="noticia 1"
+                                width="100%" height="861px"></a></li>
+                    <li><a href="noticias.html" target="_blank"><img
+                                src="grupo1-img/index/noticias/inicio-noticia-ppal1.jpg" alt="noticia 2" width="100%"
                                 height="861px"></a></li>
                     <li><a href="noticias.html" target="_blank"><img
-                                src="grupo1-img/index/noticias/inicio-noticia-ppal-grande.jpg" alt="lupa" width="100%"
-                                height="861px"></a></li>
-                    <li><a href="noticias.html" target="_blank"><img
-                                src="grupo1-img/index/noticias/inicio-noticia-ppal-grande.jpg" alt="lupa" width="100%"
+                                src="grupo1-img/index/noticias/inicio-noticia-ppal2.jpg" alt="noticia 3" width="100%"
                                 height="861px"></a></li>
                 </ul>
             </div>
-        </section>
-
-        <section class="fechas">
-            <!--Falta aplicar css (estilo de tarjetas)-->
-            <div class="fecha-anterior">
-            </div>
-            <div class="fecha-posterior">
-            </div>
-            <div class="fecha-posiciones">
+            <div class="noticia-responsive">
+                <img src="./grupo1-img/index/Responsive/baner.png" alt="noticia responsive" width="100%">
             </div>
         </section>
 
-        <section class="banner">
-            <!--Background-image en css + textos (Revisar h2 y p que se van a convertir en <a>)-->
+        <div class="inicio-index">
+            <h2>Fechas</h2>
+        </div>
+        <section class="cuadros-fechas">
+            <div class="fixture-container">
+                <div class="match-previous">
+                    <h3>Anterior</h3>
+                    <div class="teams">
+                        <img src="grupo1-img/index/banfield-escudo.png" alt="Banfield" width="55px" height="83px">
+                        <span>1 - 0</span>
+                        <img src="grupo1-img/index/escalada-escudo.png" alt="Talleres de R.Escadala" width="60px"
+                            height="67px">
+                    </div>
+                    <p class="date">Sábado 28/9</p>
+                    <a href="#" class="link">detalle completo</a>
+                </div>
+                <div class="match-previous">
+                    <h3>Próximo</h3>
+                    <div class="teams">
+                        <img src="grupo1-img/index/sanlorenzo-escudo.png" alt="San Lorenzo" width="60px" height="65px">
+                        <span>VS</span>
+                        <img src="grupo1-img/index/escalada-escudo.png" alt="Talleres de R.Escadala" width="60px"
+                            height="67px">
+                    </div>
+                    <p class="date">Viernes 4/10</p>
+                    <a href="#" class="link">comprar entradas</a>
+                </div>
+                <div class="standings">
+                    <h3>Posiciones</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>equipo</th>
+                                <th>pts</th>
+                                <th>pj</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>banfield</td>
+                                <td>33</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>velez</td>
+                                <td>30</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>patronato</td>
+                                <td>28</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>unión</td>
+                                <td>26</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>huracán</td>
+                                <td>25</td>
+                                <td>16</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>9</td>
+                                <td>talleres (rm)</td>
+                                <td>19</td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="banner-index-socios">
+                <div class="boton-acete-socio">
+                    <a href="socios.html"> Hacete Socio </a>
+                    <p>Conoce beneficios y precios</p>
+                </div>
+            </div>
+            <div class="leyenda-banner-index">
+                <h4> Fundadores del futbol profesional</h4>
+                <h4>#Talleres Nacional</h4>
+            </div><!--Background-image en css + textos (Revisar h2 y p que se van a convertir en <a>)-->
         </section>
         <!------------------MERCH------------------>
-
-
         <section class="galeria-index">
             <div class="inicio-carousel">
                 <h2>productos destacados</h2>
@@ -157,6 +240,7 @@
             </div>
             <ol class="deportes-icono">
                 <li class="deporte">
+
                     <img src="grupo1-img/index/iconos/icono-tenis.svg" alt="iconotenis"   height="60px" width="60px">
                     <p>TENIS</p>
                 </li>
@@ -175,28 +259,69 @@
                 <li class="deporte">
                     <img src="grupo1-img/index/iconos/icono-voley.svg" alt="iconovoley"    height="60px" width="60px">
                     <p>VOLEY</p>
+
+                    <!--poner a tamaño correspondiente-->
+                    <img src="grupo1-img/index/iconos/icono-tenis.svg" alt="icon-tenis" height="131px" width="177px">
+                    <p>tenis</p>
+                </li>
+                <li class="deporte">
+                    <img src="grupo1-img/index/iconos/icono-boxeo.svg" alt="icon-box" height="125px" width="96px">
+                    <p>boxeo</p>
+                </li>
+                <li class="deporte">
+                    <img src="grupo1-img/index/iconos/icono-basket.svg" alt="icon-basket" height="118px" width="118px">
+                    <p>basket</p>
+                </li>
+                <li class="deporte">
+                    <img src="grupo1-img/index/iconos/icono-patin.svg" alt="icon-patin" height="125px" width="126px">
+                    <p>patín</p>
+                </li>
+                <li class="deporte">
+                    <img src="grupo1-img/index/iconos/icono-voley.svg" alt="icon-voley" height="118px" width="118px">
+                    <p>voley</p>
+
                 </li>
             </ol>
-            <ul class="actividades-index">
+
+            <ul class="actividades-box">
                 <li>
-                    <a href="https://www.claro.com.ar/personas" target="_blank"><img src="grupo1-img/index/noticias/index-noticias-deportes1.jpg" alt=" noticiasdepórtes  "></a>
-                    <a href="https://www.claro.com.ar/personas" target="_blank"><img
-                            src="grupo1-img/index/noticias/index-noticias-deportes2.jpg" alt="logo de claro"
-                            width="800px" height="334px"></a>
+
+                   
+                    <div class="container-actividades">
+                        <a href="#"> <!-- agregar link a algo-->
+                            <img src="grupo1-img/index/noticias/index-noticias-deportes1.jpg" alt="voley"
+                                class="imagen-activades">
+                            <h4 class="titulo-actividades">Victoria de las tallarinas</h4>
+                        </a>
+                    </div>
+                    <div class="container-actividades">
+                        <a href="#"> <!-- agregar link a algo-->
+                            <img src="grupo1-img/index/noticias/index-noticias-deportes2.jpg" alt="basket"
+                                class="imagen-activades">
+                            <h4 class="titulo-actividades">Derrota ante Temperley</h4>
+                        </a>
+                    </div>
+
                 </li>
                 <li>
-                    <a href="https://www.claro.com.ar/personas" target="_blank"><img
-                            src="grupo1-img/index/noticias/index-noticias-deportes3.jpg" alt="logo de claro"
-                            width="800px" height="334px"></a>
-                    <a href="https://www.claro.com.ar/personas" target="_blank"><img
-                            src="grupo1-img/index/noticias/index-noticias-deportes4.jpg" alt="logo de claro"
-                            width="800px" height="334px"></a>
+                    <div class="container-actividades">
+                        <a href="#"> <!-- agregar link a algo-->
+                            <img src="grupo1-img/index/noticias/index-noticias-deportes3.jpg" alt="futbol-fem"
+                                class="imagen-activades">
+                            <h4 class="titulo-actividades">Talleres Puntero</h4>
+                        </a>
+                    </div>
+                    <div class="container-actividades">
+                        <a href="#"> <!-- agregar link a algo-->
+                            <img src="grupo1-img/index/noticias/index-noticias-deportes4.jpg" alt="predio"
+                                class="imagen-activades">
+                            <h4 class="titulo-actividades">Novedades del predio</h4>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </section>
-        <!--Cambiar nombre de voley a Handball-->
         <section class="sponsors">
-            <!--Falta aplicar css (animacion) poner lista ordenada (? consulta )-->
             <h3>Sponsors</h3>
             <ul>
                 <li><a href="https://www.claro.com.ar/personas" target="_blank"><img
@@ -222,7 +347,39 @@
                             src="grupo1-img/sponsors/tecnohouse-logo.png" alt="logo de tecnohouse" width="107px"
                             height="49px"></a></li>
             </ul>
+        </section>
+        <section class="sponsors-media">
+            <h3>Sponsors</h3>
+            <ul>
+                <li><a href="https://www.claro.com.ar/personas" target="_blank"><img
+                            src="grupo1-img/sponsors/claro-logo.png" alt="logo de claro" width="110px"
+                            height="41px"></a>
+                    <a href="https://www.mejoresviajes.com.ar/" target="_blank"><img
+                            src="grupo1-img/sponsors/mejoresviajes-logo.png" alt="logo mejores viajes" width="91px"
+                            height="59px"></a>
+                    <a href="https://mut.com.ar/" target="_blank"><img src="grupo1-img/sponsors/mut-logo.png"
+                            alt="logo de mut" width="110px" height="41px"></a>
+                </li>
+                <li>
+                    <a href="https://www.mvestudiantil.com" target="_blank"><img
+                            src="grupo1-img/sponsors/mv estudiantil-logo.png" alt="logo de mv estudiantil" width="71px"
+                            height="46px"></a>
+                    <a href="https://www.quilmes.com.ar/" target="_blank"><img
+                            src="grupo1-img/sponsors/quilmes-logo.png" alt="logo de quilmes" width="92px"
+                            height="48px"></a>
+                    <a href="https://www.rapicuotas.com.ar/" target="_blank"><img
+                            src="grupo1-img/sponsors/rapicuota-logo.png" alt="logo de rapicuota" width="143px"
+                            height="46px"></a>
+                </li>
+                <li>
 
+                    <a href="https://seccoweb.com/" target="_blank"><img src="grupo1-img/sponsors/secco-logo.png"
+                            alt="logo de secco" width="87px" height="52px"></a>
+                    <a href="https://www.viviendastecnohouse.com.ar/home" target="_blank"><img
+                            src="grupo1-img/sponsors/tecnohouse-logo.png" alt="logo de tecnohouse" width="107px"
+                            height="49px"></a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>

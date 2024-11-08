@@ -15,6 +15,7 @@
     text-decoration: none;
     font-weight: 400;
 }
+
 /* TAMAÑO TIPOGRAFIA- TODOS LOS H1 H2 H3 H4 H5 H6*/
 h1 {
     color: #F8F8F8;
@@ -24,30 +25,46 @@ h1 {
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 45px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 1.6px;
 }
 
 h4 {
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 1.28px;
 }
 
+p {
+    font-family: "Work Sans";
+    font-size: 24px;
+    line-height: 30px;
+}
 
+.hamburger {
+    display: none;
+}
+
+.menu-horizontal-responsive h2 {
+    display: none;
+}
+
+.noticia-responsive {
+    display: none;
+}
 
 /*index*/
 body {
     font-family: "Bebas Neue";
     background-color: #F8F8F8;
     width: 100%;
+    color: #141414;
 }
 
 .banner-ppal {
-    display: flex;
     background-image: url(grupo1-img/index/banner-header.jpg);
     padding: 20px;
     background-repeat: no-repeat;
@@ -56,10 +73,56 @@ body {
     align-items: center;
 }
 
+.noticias-principales {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
+.noticias-principales ul {
+    display: flex;
+    animation: slide 12s linear infinite;
+    /* Ajusta la duración según prefieras */
+    width: 100%;
+    /* Ajusta para mostrar todas las imágenes duplicadas */
+    margin: 0;
+    padding: 0;
+}
+
+.noticias-principales:hover ul {
+    animation-play-state: paused;
+}
+
+
+.noticias-principales li {
+    list-style: none;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.noticias-principales img {
+    height: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+/****************nav********/
 
 nav {
-    background-color: #000000;
+    background-color: #141414;
     padding: 15px, 99px;
 }
 
@@ -92,13 +155,12 @@ nav {
     display: none;
     width: 164px;
     background-color: #F8F8F8;
-    border-radius: 10px;
 }
 
 .menu-vertical li a {
     display: block;
     padding: 15px 20px;
-    color: #000000;
+    color: #141414;
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
 }
@@ -124,17 +186,15 @@ nav {
 
 /*FOOTER*/
 footer {
-    background-color: #000000;
+    background-color: #141414;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 
 .copy {
     color: #F8F8F8;
     font-size: 20px;
-    padding: 20px;
-    font-weight: 400;
     font-family: "Work Sans", sans-serif;
     padding: 10px 30px;
 }
@@ -168,36 +228,212 @@ footer {
 
 
 /*************************COMIENZO DE SECCIONES DE INDEX**********************************************/
-/*GALERIA SLIDER */ 
+/*GALERIA SLIDER */
 
 
-/* FIXTURE*/ 
+/***********************************************aca empieza el fixture ***********************************:)*/
+/* FIXTURE*/
 
-/* BANNER */ 
+.inicio-index h2 {
+    text-align: center;
+    color: #F8F8F8;
+    background-color: #DF0E0D;
+    padding: 20px 0px;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+}
 
 
-/*SECTION MERCH */
+.cuadros-fechas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixture-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    background-color: #F8F8F8;
+
+
+    height: 300px;
+    width: 1000px;
+    padding: 95px 0px;
+}
+
+
+/* Estilo general para cada sección (anterior, próximo y posiciones) */
+.match-previous,
+.standings {
+    border: 4px solid #BD1414;
+    padding: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+
+/* Títulos de cada sección */
+.match-previous h3,
+.standings h3 {
+    color: #BD1414;
+    margin-bottom: 10px;
+}
+
+
+/* Contenido de los equipos y resultados */
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.teams img {
+    height: auto;
+}
+
+
+.date {
+    color: #BD1414;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+.link {
+    color: #BD1414;
+    border-bottom: 1px solid var(--Rojo-Bastn, #DF0E0D);
+    font-size: 20px;
+    font-family: "work sans";
+    font-variant: small-caps;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/* Tabla de posiciones */
+.standings table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    background-color: whitesmoke;
+}
+
+
+.standings th,
+.standings td {
+    padding: 1px;
+    border: 1px solid #BD1414;
+    font-family: "work sans";
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-variant: all-petite-caps;
+    font-size: 16px;
+}
+
+.standings th {
+    font-weight: 700;
+}
+
+
+
+.standings .highlight {
+    background-color: #bd1414;
+    color: #F8F8F8
+}
+
+.teams span {
+    font-size: 25px;
+}
+
+/* FIN FIXTURE*/
+
+
+
+/* BANNER */
+
+.banner-index-socios {
+    background-image: url(grupo1-img/index/banner-publicitario-index.gif);
+    background-repeat: no-repeat;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.banner-index-socios a {
+    font-size: 80px;
+    font-family: "Bebas Neue";
+    padding: 2px 12px 0px 23px;
+    color: #f8f8f8;
+}
+
+.banner-index-socios a:hover {
+    background-color: #141414;
+    padding: 2px 12px 0px 23px;
+    color: #f8f8f8;
+}
+
+.banner-index-socios p {
+    font-family: "Work Sans";
+    font-size: 36px;
+    color: #f8f8f8;
+    padding-top: 30px;
+}
+
+.atencion-cliente a {
+    color: #BD1414;
+}
+
+.boton-acete-socio {
+    padding: 90px 50px;
+}
+
+.leyenda-banner-index {
+    display: flex;
+    gap: 3em;
+    font-family: "Bebas Neue";
+    justify-content: center;
+    align-items: center;
+    color: #F8F8F8;
+    background-color: #141414;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+/*************************************************************************************************************/
+
+
+/*SECTION MERCH INDEX */
 /***********************************************aca empieza merch-carrousel ***********************************:)*/
 
 .galeria-index {
-    height: 100vh;
+    padding-top: 30px 0px;
 }
 
 .inicio-carousel h2 {
     text-align: center;
     color: #F8F8F8;
-    background-color: #141414;
+    background-color: #DF0E0D;
     padding: 20px 0px;
     letter-spacing: 0.5px;
+    margin-top: 45px;
 }
 
 .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     position: relative;
-    margin-top: 95px;
+    padding: 95px 0px;
 }
 
 .carousel {
@@ -263,7 +499,8 @@ footer {
     opacity: 1;
 }
 
-button {
+.next,
+.prev {
     background-color: #DF0E0D;
     color: #F8F8F8;
     border: none;
@@ -275,11 +512,11 @@ button {
     padding: 4px 12px 4px 10px;
 }
 
-button.prev {
+.prev {
     left: 60px;
 }
 
-button.next {
+.next {
     right: 60px;
 }
 
@@ -292,17 +529,13 @@ button.next {
 
 /*SECTION deportes */
 .nombre {
-    background-color: #000000;
+    background-color: #141414;
     color: #ffffff;
     padding: 20px;
 
 }
 
 .nombre h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-family: "Bebas Neue";
-    font-size: 30px;
     display: flex;
     justify-content: center;
 }
@@ -318,28 +551,69 @@ button.next {
 .deportes-icono {
     display: flex;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 90px 0px;
 }
 
-.deporte p{
+.deporte p {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 24px;
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
     font-variant: small-caps;
 }
 
 /*Section noticias DEL CLUB*/
-.actividades-index{
+.actividades-box {
     display: flex;
-    padding: 30px;
+    justify-content: center;
+    padding: 2em;
+    gap: 3em;
 }
 
+.actividades-box li{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.actividades-index {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.actividades-index h4 {
+    padding: 20px;
+    color: #F8F8F8;
+    background-color: #DF0E0D;
+    width: 40%;
+}
+
+.container-actividades {
+    position: relative;
+}
+
+.container-actividades img {
+    max-width: auto;
+    width: 100%;
+}
+
+.imagen-actividades {
+    position: absolute;
+    max-width: 200px;
+}
+
+.titulo-actividades {
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    padding: 1em;
+    background-color: #DF0E0D;
+    color: #f8f8f8;
+}
 
 /* Fin Section noticias*/
-
-
-/*SECTION sponsors */
 
 
 /**********************************************************************SECTION sponsorS************************************************/
@@ -354,15 +628,19 @@ button.next {
     gap: 60px;
     justify-content: center;
     align-items: center;
-    display: flex;
     padding: 35px 0px;
     /* Transiciones suaves */
+}
+
+.sponsors-media {
+    display:none;
 }
 
 .sponsors li img {
     opacity: 0.6;
     transform: scale(1);
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Transiciones suaves */
 }
 
 .sponsors li img:hover {
@@ -372,15 +650,9 @@ button.next {
     /* Zoom del 10% */
 }
 
-
-
-
-
-
 .sponsors h3 {
     text-align: center;
     font-family: "Work Sans";
-    font-size: 24px;
     color: #F8F8F8;
     padding: 30px 0px;
 }
@@ -395,14 +667,16 @@ button.next {
 
 /*SOCIOS*/
 
-/*SOCIOS*/
 
-h3 {
-    font-family: "Bebas Neue";
-    font-size: 40px;
-    letter-spacing: 1.6px;
-    border-bottom: 3px solid var(--Rojo-Talleres, #BD1414);
-    color: #141414;
+/*banner socios*/
+
+aside {
+    margin-top: 3em;
+
+}
+
+.h3-socios {
+    border-bottom: 3px solid #BD1414;
 }
 
 
@@ -449,12 +723,11 @@ h3 {
     padding: 10px;
     text-align: center;
     font-size: 32px;
-    font-weight: 400;
 }
 
 .tabla-precios th {
     background-color: #BD1414;
-    color: #fff;
+    color: #f8f8f8;
 }
 
 .asociarse {
@@ -462,6 +735,7 @@ h3 {
     justify-content: center;
     display: flex;
     width: 886px;
+    width: 100%;
     align-items: flex-start;
     color: #F8F8F8;
     background-color: #141414;
@@ -471,8 +745,11 @@ h3 {
     cursor: pointer;
 }
 
+
+/*****mi, nose si era que tenias que sacarlo o ponerle color a la tipo, pero aca esta el hover******/
 .asociarse:hover {
-    color: #DF0E0D;
+    background-color: #BD1414;
+    color: #F8F8F8;
 }
 
 
@@ -487,19 +764,12 @@ h3 {
 .informacion p,
 .atencion-cliente p {
     margin-top: 15px;
-    color: var(--Negro-tallarin, #141414);
     font-family: "Work Sans";
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 29px;
 }
 
 .informacion p strong {
-    color: #141414;
-    font-family: "Work Sans";
-    font-size: 24px;
-    font-style: normal;
     font-weight: 800;
     line-height: normal;
     font-variant: small-caps;
@@ -513,9 +783,10 @@ h3 {
     /* Espacio entre el main y el aside */
     margin: 0 auto;
     /* Centra el contenedor en la página */
+    justify-content: space-around;
 }
 
-.socios-main{
+.socios-main {
     flex: 1;
     /* Ocupa el espacio restante */
     display: flex;
@@ -523,7 +794,7 @@ h3 {
     gap: 31px;
 }
 
-/* Estilos del Banner Publicitario */
+/* Estilos del Banner Publicitario en socios */
 
 .banner-publicitario {
     width: 300px;
@@ -548,28 +819,26 @@ h3 {
 .banner-publicitario p {
     font-family: "Bebas Neue";
     text-align: center;
-    font-family: "Bebas Neue";
-    font-size: 55px;
-    font-style: normal;
+    font-size: 45px;
     line-height: normal;
     letter-spacing: 1.1px;
 }
 
 .boton-tienda {
-    padding: 13px 34px;
-    justify-content: center;
-    align-items: center;
+    padding: 9px 22px;
     display: inline-block;
     background-color: #141414;
     color: #F8F8F8;
-    text-decoration: none;
     margin-top: 10px;
+    font-size: 22px;
 }
 
+.boton-tienda:hover {
+    color: #DF0E0D;
+}
 
 .banner-publicitario img {
     width: 100%;
-    /* Ajusta el ancho al contenedor */
 }
 
 
@@ -595,6 +864,9 @@ h3 {
     position: relative;
     text-align: center;
     margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .close {
@@ -627,6 +899,7 @@ h3 {
     font-size: 1em;
     border: 2px solid #BD1414;
     box-sizing: border-box;
+    font-family: 'Work Sans';
 }
 
 .modal-content button {
@@ -638,10 +911,69 @@ h3 {
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 10px;
+    font-family: 'Work Sans';
 }
 
 .modal-content button:hover {
     background-color: #a10e0e;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input[type="password"] {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+
+.loader {
+    margin-top: 90px;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #bd1414;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+    left: 128px;
+    bottom: 25px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.modal-content hgroup {
+    padding: 20px;
+}
+
+.modal-content .check {
+    padding: 50px;
+}
+
+.modal-content .confirmacion {
+    font-family: "bebas neue";
 }
 
 /* Estilo para el botón de cerrar */
@@ -659,34 +991,47 @@ h3 {
     color: #BD1414;
 }
 
-.mostrar-contraseña {
-    display: flex;
-}
 
 /* FIN SOCIOS*/
 
 
 
-/*HISTORIA*/
+/************************************************HISTORIA*******************************/
+
+/*section 1 historia*/
+
 .historia {
-    display: flex;
-    justify-content: center;
-    background-color: #BD1414;
-    flex-direction: column;
-    width: 100%;
-    align-items: center
+    height: 92vh;
 }
 
 
 
+.video-contenedor {
+    background-color: #BD1414;
+    /* Fondo rojo */
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    /* para que este debajo de los botones*/
+}
 
-.historia-texto h2 {
+.video-contenedor video {
+    height: 100%;
+    /* Ajusta el ancho del video según prefieras */
+    /* Máximo ancho del video */
+}
+
+
+.historia h2 {
     position: relative;
-    top: -311px;
+    bottom: 200px;
+    left: 301px;
     color: #BD1414;
     background-color: #F8F8F8;
     width: 500px;
-padding: 12px 50px;
+    padding: 12px 50px;
+    z-index: 10;
+    /* para que este arriba del video */
 }
 
 .fechas {
@@ -694,32 +1039,31 @@ padding: 12px 50px;
     justify-content: space-evenly;
     background-color: #141414;
     width: 100%;
-    padding: 21px 108px 48px 80px;
+    padding: 45px 0px 49px 0px;
+    position: relative;
+    bottom: 113px;
+    z-index: 15;
 }
 
 .fechas a {
     color: var(--blanco-escalada, #F8F8F8);
-text-align: center;
-font-family: "Bebas Neue";
-font-size: 40px;
-font-weight: 400;
-letter-spacing: 2px;
-text-align: center;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
 }
-.fechas li a:hover {
-    color: #DF0E0D;
-    transform: scale(1.4);
 
-}
 
 
 .fechas p {
     text-align: center;
-font-family: "Work Sans";
-font-size: 32px;
-font-weight: 400;
-letter-spacing: 1.6px;
-color: #F8F8F8;
+    font-family: "Work Sans";
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: #F8F8F8;
 }
 
 .fechas li {
@@ -728,142 +1072,208 @@ color: #F8F8F8;
     align-items: center;
 }
 
+.fechas li a:hover {
+    color: #DF0E0D;
+    transform: scale(1.4);
+}
+
+
+
+/* section 2 historia*/
+
+
 .historia1906 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.num-fecha {
+    display: flex;
+    background-color: #DF0E0D;
+    color: #F8F8F8;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tit-historia {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+}
+
+
+.historia-2 {
     display: flex;
     height: 100%;
-
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
 }
 
-.historia1906 h3 { 
-    color: black; /* Color del texto */
-    margin-bottom: 10px; /* Ajusta el margen inferior si necesitas más espacio */
-    border-bottom: 4px solid #ca1610; /* Color y grosor de la línea */
-    padding-bottom: 5px ; /* Espacio entre el texto y la línea */
+#foto-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.historia-texto p {
-font-family: "Work Sans";
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-max-width: 750px;
+#foto-historia a {
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    color: #141414;
+}
 
+
+.tit-historia {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.historia1906 h3 {
+    width: 100%;
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    border-bottom: 3px solid #BD1414;
+    position: relative;
+    max-width: 82%;
+    top: 13%;
+    left: 9%;
 }
 
 
 
-.historia-texto { 
-    gap: 30px;
+
+.historia-2 p {
+    max-width: 750px;
 }
+
+.menu-vertical {
+    z-index: 20;
+}
+
 /*FIN HISTORIA*/
 
 
 /*NOTICIAS*/
+
 /* imagen TITULAR */
-.noticia-padre{
+.noticia-padre {
     display: flex;
-    flex-direction: column;
-    gap: 2em;
+    justify-content: center;
+
 }
-#titular{
+
+#titular {
     background-image: url(grupo1-img/html-noticias/articulo-titulo.png);
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-#titular h2{
+
+#titular h2 {
     color: #F8F8F8;
     background-color: #BD1414;
-    padding: 0.3em;}
+    padding: 0.3em;
+}
 
 
 /* NOTICIA PRINCIPAL */
-#noticia-ppal{
+#noticia-ppal {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
-#noticia-ppal article{
+
+#noticia-ppal article {
     max-width: 1000px;
     padding: 3em;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
+
 #noticia-ppal article p {
     display: flex;
     flex-direction: column;
     gap: 1em;
     font-family: "Work Sans", sans-serif;
 }
+
 #noticia-ppal article h3 {
     border-bottom: 3px solid #BD1414;
 }
 
-
-.leyenda{
-    border: none;
-    font-size: 0.1em;
+.leyenda p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
+
 /* OTRAS NOTICIAS */
-#otras-noticias{
-    display: flex;
-    gap: 2em;
-    justify-content: center;
+
+#otras-noticias {
     padding: 3em;
 }
 
 
-h3 img{
-    border: 0.2em solid #BD1414 ;
-}
-
-
-
-.card{
-    display: flex;
-    flex-direction: column;
-    max-width: 20em;
-    padding: 1em;
-    gap: 1em;
-    align-items: center;
-    justify-content: space-between;
-    color: #141414;
-    background-repeat: no-repeat;
-    font-family: "Work Sans", sans-serif;
-}
-
-
-.click-card button{
-    font-size: 12px;
-    padding: 10px;
-    color: #F8F8F8;
-    border: none;
-    background-color: #DF0E0D;}
 
 /*FIN NOTICIAS*/
 
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
 
 
+}
 
-/**MERCH**********************************************************************************************************/
-
-.merch{
-display: flex;
+.content {
+    position: relative;
 }
 
 
-.producto {
+/**MERCH*******************************************************************
+.container-noticias-img {
+    max-width: auto;
+    width: 100%;
+}
+
+.imagen-noticias {
+    max-width: 300px;
+
+}
+
+.titular {
+    position: absolute;
+    top: 4em;
+    left: 4.2em;
+    padding: 0.4em;
+    background-color: #DF0E0D;
+    color: #f8f8f8;
+}
+
+
+/*FIN NOTICIAS*/
+
+/*********************************MERCH**********************************************************************************************************/
+
+.merch {
+
     display: flex;
-    max-width: 900px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    align-items: center;
 }
 
 .galeria {
+    width: 76%;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -871,112 +1281,130 @@ display: flex;
 }
 
 .imagen-principal img {
-    width: 100%;
-    border: 1px solid red;
-    padding: 10px;
-    margin-bottom: 15px;
+    border: 3px solid #DF0E0D;
+    padding: 0px 17px;
+    margin-bottom: 21px;
+
 
 }
+
 
 .miniaturas {
     display: flex;
-    gap: 15px;
+    gap: 21px;
 }
 
 .miniaturas img {
-    border: 1px solid #ff0000;
+    width: 30%;
+  border: 3px solid #DF0E0D;}
 
 
-}
 
-.camiseta {
+
+.info-camiseta {
+
     width: 55%;
-    padding:20px;
+    padding: 20px;
 }
 
-.camiseta h1 {
-    font-size: 40px;
-    color: #000000;
+.camiseta h2 {
     margin-bottom: 10px;
 }
 
 
+.cuotas-precio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+
+}
+
+.cuota {
+    font-size: 17px;
+    color: #BD1414;
+}
+
+
+
+.titulos-p p {
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.titulos-p {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
 
 .precio {
-    font-size: 28px;
-    color: #000000;
+    font-size: 30px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
-.cuotas {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
 
-.talla {
-    margin-bottom: 15px;
-    font-size: 22px;
 
-}
-
-.opciones-talla {
+.opciones-talles {
     gap: 20px;
-    padding: 10px;
+    font-family: "Work Sans", sans-serif;
 }
+
+
 
 .opciones-talles button {
     padding: 8px;
-    border: 1px solid #ff0000;
-    background-color: #fff;
+
+    border: 2px solid #141414;
+    background-color: #f8f8f8;
+    margin: 5px;
+    cursor: pointer;
 }
 
-.cantidad {
-    margin-bottom: 20px;
-    
-}
-
-.cantidad p {
-    margin: 0;
-    font-size: 22px;
+.opciones-talles button:hover {
+    background-color: #141414;
+    color: #f8f8f8;
 
 }
 
-.selector-cantidad {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-padding: 10px;
-    
+/* Estilo para el botón seleccionado */
+.opciones-talles button.active {
+    background-color: #141414;
+    color: #f8f8f8;
 }
 
-.selector-cantidad button {
-    padding: 5px;
-    border: 1px solid #ff0000;
-    background-color: #fff;
-}
 
-.selector-cantidad input {
-    width: 50px;
+
+
+
+.unidades input {
+    width: 80px;
     text-align: center;
-    border: 1px solid #ff0000;
-
+    border: 2px solid #DF0E0D;
+    height: 25px;
 }
 
-.metodos-pago {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 22px;
-}
+
 
 .iconos {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
-.iconos img {
-    width: 30px;
-    height: 30px;
+
+
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+    width: 400px;
+    min-width: 300px;
+    padding: 13px 0px;
 }
 
 
@@ -985,34 +1413,316 @@ padding: 10px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 12px;
-    background-color: rgb(255, 0, 0);
-    position: absolute;
-    top:483px;
-    right:538px;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+}
+
+.agregar-carrito {
+    background-color: #DF0E0D;
+    color: #f8f8f8;
+
 }
 
 
-
-
-.agregar-carrito:hover{
-    background-color: #000000;
+.agregar-carrito:hover {
+    background-color: #141414;
     transition: 0.3s ease;
 }
 
 .comprar {
-    background-color: #000;
-    color: #fff;
-    position: absolute;
-    top:523px;
-    right: 571px;
+    background-color: #141414;
+    color: #f8f8f8;
+    font-family: "Bebas Neue";
+
+
 }
 
 .comprar:hover {
-    background-color: #ff0000;
+    background-color: #DF0E0D;
     transition: 0.3s ease;
 }
 
 
 
+/**FINAL MERCH**********************************************************************************************************/
 
+
+/*******comienzo responsive***************************/
+@media screen and (max-width:1366px) {
+    
+    p{
+        font-size: 15px;
+    }
+    .leyenda p{
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .menu-horizontal li a{
+        font-size: 24px;
+    }
+
+    .menu-vertical li a{
+        font-size: 18px;
+    }
+    .banner-index-socios a{
+        font-size: 70px;
+    }
+    .banner-index-socios p{
+        font-size: 24px;
+    }
+    .titulo-actividades{
+        padding: 0.3em;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    aside{
+        display: none;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .banner-ppal {
+        display: block;
+        text-align: center;
+        /* Opcional: centra el título */
+    }
+
+    .banner-ppal {
+        display: none;
+        background-image: none;
+    }
+
+    .banner-ppal img,
+    .banner-ppal a {
+        display: none;
+    }
+
+    .menu-horizontal-responsive h2 {
+        display: block;
+        font-size: 28px;
+        margin: 0;
+        color: #f8f8f8;
+        position: absolute;
+        top: 39px;
+        right: 87PX;
+    }
+
+
+
+    .noticias-principales {
+        display: none;
+    }
+
+    /* Muestra la imagen específica para responsive */
+    .noticia-responsive {
+        display: block;
+    }
+
+    /* Ajusta la imagen para que ocupe todo el ancho en responsive */
+    .noticia-responsive img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* *******************Estilos responsive para menú hamburguesa *****************/
+    .hamburger {
+        display: none;
+        font-size: 30px;
+        color: #F8F8F8;
+        cursor: pointer;
+        padding: 35px;
+    }
+
+    .menu-horizontal {
+        display: none;
+        flex-direction: column;
+        background-color: #141414;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-horizontal li a {
+        font-size: 24px;
+    }
+
+    .menu-horizontal.active {
+        display: flex;
+    }
+
+
+
+
+    /* *******************Estilos responsive para menú hamburguesa *****************/
+
+
+    .cuadros-fechas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .fixture-container {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* merch */
+
+    /* *************merch**************/
+    .carousel-item {
+        position: relative;
+        min-width: 25%;
+        text-align: center;
+    }
+
+    .next,
+    .prev {
+        display: none;
+    }
+
+
+    .galeria-index {
+        display: none;
+    }
+
+
+    .carousel-item img {
+        width: 202px;
+        height: 250px;
+    }
+
+
+
+
+
+    .cuadros-fechas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*iconos deportes*/
+    .deportes-icono {
+        flex-wrap: wrap;
+        /* Permite que los íconos se envuelvan en varias filas */
+        justify-content: center;
+        /* Centra los íconos en responsive */
+    }
+
+    .deporte {
+        flex: 1 1 30%;
+        /* Ajusta a 30% para que quepan tres íconos por fila */
+        text-align: center;
+        /* Centra el texto debajo de cada ícono */
+        padding: 38px;
+    }
+
+    /*actividades. fotos */
+    .actividades-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actividades-index {
+        width: 90%;
+        /* Ajusta el ancho para que ocupen menos espacio en pantallas pequeñas */
+        max-width: 520px;
+        /* Limita el tamaño máximo si es necesario */
+    }
+
+
+    .actividad-index-voley,
+    .actividad-index-basket,
+    .actividad-index-futbolfem,
+    .actividad-index-escuelita {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        /* Ajusta el padding si es necesario para reducir espacio */
+    }
+
+
+    /*sponsors */
+
+    /*.sponsors h3 {
+        color: #F8F8F8;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 20px;
+        padding: 10px;
+        flex-direction: column;
+    }*/
+
+    /* Estilos para el responsive de sponsors*/
+    .sponsors {
+        display: none;
+    }
+
+    .sponsors-media {
+        visibility: visible;
+        background-color: #BD1414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsors-media ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 0px;
+        /* Transiciones suaves */
+    }
+
+    .sponsors-media li {
+        display: flex;
+        gap: 2em;
+    }
+
+    .sponsors-media h3 {
+        text-align: center;
+        font-family: "Work Sans";
+        color: #F8F8F8;
+        padding: 30px 0px;
+    }
+
+    footer {
+        background-color: #141414;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    .copy {
+        padding: 29px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}

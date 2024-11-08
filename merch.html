@@ -4,11 +4,10 @@
 <head>
 
     <link rel="stylesheet" href="style.css">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TALLERES DE ESCALADA</title>
+    <link rel="icon" href="grupo1-img/favicon-1.ico" type="image/x-icon">
+    <title>Tienda Talleres RM</title>
 </head>
 
 <body>
@@ -26,7 +25,7 @@
                 </li>
                 <li><a href="#">Socios</a>
                     <ul class="menu-vertical">
-                        <li><a href="socios.html">cuotas</a></li>
+                        <li><a href="socios.html">Cuotas</a></li>
                         <li><a href="#">Hacete Socio</a></li>
                         <li><a href="#">Entradas</a></li>
                     </ul>
@@ -57,53 +56,60 @@
     </header>
     <main>
         <section class="merch">
-        <div class="galeria">
-            <div class="imagen-principal">
-                <img src="grupo1-img/html-merch/merch-camiseta.png" alt="Camiseta Oficial 2024">
-            </div>
-            <div class="miniaturas">
-                <img src="grupo1-img/html-merch/camiseta1.png" alt="Miniatura 1" height="100px" width="100px">
-                <img src="grupo1-img/html-merch/camiseta2.jpg" alt="Miniatura 2" height="100px" width="100px">
-                <img src="grupo1-img/html-merch/camiseta3.jpg" alt="Miniatura 3" height="100px" width="100px">
-            </div>
-        </div>
 
 
-        <div class="camiseta">
-            <h1>Camiseta Oficial 2024</h1>
-            <p class="precio">$32.000</p>
-            <p class="cuotas">Llévalo en 3 cuotas de solo $10.666</p>
-            <div class="talla">
-                <p>Talles</p>
-                <div class="opciones-talla">
-                    <button>S</button>
-                    <button>M</button>
-                    <button>L</button>
-                    <button>XL</button>
-                    <button>XXL</button>
+            <div class="galeria">
+                <div class="imagen-principal">
+                    <img src="grupo1-img/html-merch/camiseta-principal.png" alt="Camiseta Oficial 2024" width="498px"
+                        height="350px">
+
+                </div>
+                <div class="miniaturas">
+                    <img src="grupo1-img/html-merch/camiseta1.png" alt="Miniatura 1" width="164px" height="244px">
+                    <img src="grupo1-img/html-merch/camiseta2.png" alt="Miniatura 2" width="164px" height="244px">
+                    <img src="grupo1-img/html-merch/camiseta3.png" alt="Miniatura 3" width="164px" height="244px">
                 </div>
             </div>
-            <div class="cantidad">
-                <p>Cantidad</p>
-                <div class="selector-cantidad">
-                    <button>-</button>
-                    <input type="number" value="1" min="1">
-                    <button>+</button>
+            <div class="info-camiseta">
+                <div class="camiseta">
+                    <h2>Camiseta Oficial 2024</h2>
+                    <div class="cuotas-precio">
+                        <p class="precio">$32.000</p>
+                        <p class="cuota">Llévalo en 3 cuotas de solo $10.666</p>
+                    </div>
+                    <div class="titulos-p">
+                        <div>
+                            <p>TALLES</p>
+                            <div class="opciones-talles">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                                <button>XXL</button>
+                            </div>
+                        </div>
+                        <div class="unidades">
+                            <p>CANTIDAD</p>
+                            <input type="number" value="1" min="1">
+                        </div>
+                        <div>
+                            <p>MÉTODOS DE PAGO</p>
+                            <div class="iconos">
+                                <img src="grupo1-img/html-merch/icono-efectivo.png" alt="Pago Efectivo" height="48px"
+                                    width="48px">
+                                <img src="grupo1-img/html-merch/icono-tarjeta.png" alt="Pago con tajeta" height="57px"
+                                    width="52px">
+                                <img src="grupo1-img/html-merch/icono-transferencia.png" alt="Pago trasferencia"
+                                    width="43px" height="43px">
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button class="agregar-carrito">AGREGAR AL CARRITO</button>
+                            <button class="comprar">COMPRAR</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="metodos-pago">
-                <p>MÉTODOS DE PAGO</p>
-                <div class="iconos">
-                    <img src="grupo1-img/html-merch/icono-efectivo.png" alt="Pago 1" height="44px" width="44px">
-                    <img src="grupo1-img/html-merch/icono-tarjeta.png" alt="Pago 2" height="44px" width="44px">
-                    <img src="grupo1-img/html-merch/icono-transferencia.png" alt="Pago 3" height="44px" width="44px">
-                </div>
-            </div>
-            <div class="botones">
-                <button class="agregar-carrito">AGREGAR AL CARRITO</button>
-                <button class="comprar">COMPRAR</button>
-            </div>
-        </div>
         </section>
     </main>
     <footer>
@@ -121,6 +127,7 @@
                     src="grupo1-img/index/redes/logo-facebook.png" alt="logo facebook" width="13" height="25"></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
